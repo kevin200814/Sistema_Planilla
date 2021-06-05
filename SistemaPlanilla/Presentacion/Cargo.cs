@@ -13,9 +13,9 @@ using System.Runtime.InteropServices;
 
 namespace Presentacion
 {
-    public partial class Usuarios : Form
+    public partial class Cargo : Form
     {
-        public Usuarios()
+        public Cargo()
         {
             InitializeComponent();
             CargarDataUsuario();
@@ -106,9 +106,9 @@ namespace Presentacion
         }
 
         public void CargarDataUsuario() {
-            /*lblNombre.Text = LoginUsuarioCache.nombre + ", "+ LoginUsuarioCache.apellido;
+           /* lblNombre.Text = LoginUsuarioCache.nombre + ", "+ LoginUsuarioCache.apellido;
             lblCargo.Text = LoginUsuarioCache.cargo;
-            lblcorreo.Text = LoginUsuarioCache.email;*/
+            lblcorreo.Text = LoginUsuarioCache.email*/
             
 
         }
@@ -127,9 +127,7 @@ namespace Presentacion
 
         private void button4_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Cargo frmT = new Cargo();
-            frmT.Show();
+
         }
     }
 }

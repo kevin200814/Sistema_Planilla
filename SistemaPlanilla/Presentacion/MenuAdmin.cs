@@ -125,5 +125,12 @@ namespace Presentacion
             Empleados frmT = new Empleados();
             frmT.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Cargo frmT = new Cargo();
+            frmT.Show();
+        }
     }
 }
