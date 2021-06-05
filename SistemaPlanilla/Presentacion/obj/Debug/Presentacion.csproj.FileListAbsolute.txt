@@ -21,7 +21,6 @@ C:\Users\Alexis\Desktop\Programación orientada a servicios\Sistema_Planilla\Sis
 C:\Users\Alexis\Desktop\Programación orientada a servicios\Sistema_Planilla\SistemaPlanilla\Presentacion\bin\Debug\Presentacion.pdb
 C:\Users\Alexis\Desktop\Programación orientada a servicios\Sistema_Planilla\SistemaPlanilla\Presentacion\bin\Debug\Logica.dll
 C:\Users\Alexis\Desktop\Programación orientada a servicios\Sistema_Planilla\SistemaPlanilla\Presentacion\bin\Debug\Logica.pdb
-C:\Users\Alexis\Desktop\Programación orientada a servicios\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.csprojResolveAssemblyReference.cache
 C:\Users\Alexis\Desktop\Programación orientada a servicios\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Login.resources
 C:\Users\Alexis\Desktop\Programación orientada a servicios\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.MenuEmpleado.resources
 C:\Users\Alexis\Desktop\Programación orientada a servicios\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.MenuAdmin.resources
@@ -29,3 +28,4 @@ C:\Users\Alexis\Desktop\Programación orientada a servicios\Sistema_Planilla\Sis
 C:\Users\Alexis\Desktop\Programación orientada a servicios\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Usuarios.resources
 C:\Users\Alexis\Desktop\Programación orientada a servicios\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
 C:\Users\Alexis\Desktop\Programación orientada a servicios\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.Cache
+C:\Users\Alexis\Desktop\Programación orientada a servicios\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Cargo.resources

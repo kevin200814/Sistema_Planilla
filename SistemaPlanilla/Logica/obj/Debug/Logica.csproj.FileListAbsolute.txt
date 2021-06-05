@@ -2,3 +2,7 @@ C:\Users\Alexis\Desktop\Programación orientada a servicios\c sharp\SistemaPlani
 C:\Users\Alexis\Desktop\Programación orientada a servicios\c sharp\SistemaPlanilla\Logica\bin\Debug\Logica.pdb
 C:\Users\Alexis\Desktop\Programación orientada a servicios\c sharp\SistemaPlanilla\Logica\obj\Debug\Logica.dll
 C:\Users\Alexis\Desktop\Programación orientada a servicios\c sharp\SistemaPlanilla\Logica\obj\Debug\Logica.pdb
+C:\Users\Alexis\Desktop\Programación orientada a servicios\Sistema_Planilla\SistemaPlanilla\Logica\bin\Debug\Logica.dll
+C:\Users\Alexis\Desktop\Programación orientada a servicios\Sistema_Planilla\SistemaPlanilla\Logica\bin\Debug\Logica.pdb
+C:\Users\Alexis\Desktop\Programación orientada a servicios\Sistema_Planilla\SistemaPlanilla\Logica\obj\Debug\Logica.dll
+C:\Users\Alexis\Desktop\Programación orientada a servicios\Sistema_Planilla\SistemaPlanilla\Logica\obj\Debug\Logica.pdb
