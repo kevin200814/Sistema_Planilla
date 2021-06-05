@@ -30,17 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuAdmin));
             this.MenuVertical = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnPlanillas = new System.Windows.Forms.Button();
             this.cerrarSesion = new System.Windows.Forms.Button();
-            this.lblcorreo = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblCargo = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.btnprod = new System.Windows.Forms.Button();
+            this.btnReportes = new System.Windows.Forms.Button();
+            this.btnRoles = new System.Windows.Forms.Button();
+            this.btnHorarios = new System.Windows.Forms.Button();
+            this.btnEmpleados = new System.Windows.Forms.Button();
+            this.btnUsuarios = new System.Windows.Forms.Button();
             this.btnlogoInicio = new System.Windows.Forms.PictureBox();
             this.BarraTitulo = new System.Windows.Forms.Panel();
             this.iconminimizar = new System.Windows.Forms.PictureBox();
@@ -49,6 +48,7 @@
             this.iconcerrar = new System.Windows.Forms.PictureBox();
             this.btnMenu = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
+            this.btnCargos = new System.Windows.Forms.Button();
             this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnlogoInicio)).BeginInit();
@@ -62,18 +62,18 @@
             // 
             // MenuVertical
             // 
-            this.MenuVertical.BackColor = System.Drawing.Color.MidnightBlue;
-            this.MenuVertical.Controls.Add(this.button2);
+            this.MenuVertical.BackColor = System.Drawing.Color.RoyalBlue;
+            this.MenuVertical.Controls.Add(this.btnCargos);
+            this.MenuVertical.Controls.Add(this.btnPlanillas);
             this.MenuVertical.Controls.Add(this.cerrarSesion);
-            this.MenuVertical.Controls.Add(this.lblcorreo);
             this.MenuVertical.Controls.Add(this.lblNombre);
             this.MenuVertical.Controls.Add(this.pictureBox2);
             this.MenuVertical.Controls.Add(this.lblCargo);
-            this.MenuVertical.Controls.Add(this.button6);
-            this.MenuVertical.Controls.Add(this.button5);
-            this.MenuVertical.Controls.Add(this.button4);
-            this.MenuVertical.Controls.Add(this.button3);
-            this.MenuVertical.Controls.Add(this.btnprod);
+            this.MenuVertical.Controls.Add(this.btnReportes);
+            this.MenuVertical.Controls.Add(this.btnRoles);
+            this.MenuVertical.Controls.Add(this.btnHorarios);
+            this.MenuVertical.Controls.Add(this.btnEmpleados);
+            this.MenuVertical.Controls.Add(this.btnUsuarios);
             this.MenuVertical.Controls.Add(this.btnlogoInicio);
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuVertical.Location = new System.Drawing.Point(0, 0);
@@ -81,21 +81,21 @@
             this.MenuVertical.Size = new System.Drawing.Size(250, 650);
             this.MenuVertical.TabIndex = 0;
             // 
-            // button2
+            // btnPlanillas
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 352);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(250, 40);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Ventas";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnPlanillas.FlatAppearance.BorderSize = 0;
+            this.btnPlanillas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnPlanillas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPlanillas.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlanillas.ForeColor = System.Drawing.Color.White;
+            this.btnPlanillas.Image = ((System.Drawing.Image)(resources.GetObject("btnPlanillas.Image")));
+            this.btnPlanillas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPlanillas.Location = new System.Drawing.Point(0, 312);
+            this.btnPlanillas.Name = "btnPlanillas";
+            this.btnPlanillas.Size = new System.Drawing.Size(250, 40);
+            this.btnPlanillas.TabIndex = 3;
+            this.btnPlanillas.Text = "Planillas";
+            this.btnPlanillas.UseVisualStyleBackColor = true;
             // 
             // cerrarSesion
             // 
@@ -110,25 +110,13 @@
             this.cerrarSesion.UseVisualStyleBackColor = true;
             this.cerrarSesion.Click += new System.EventHandler(this.cerrarSesion_Click);
             // 
-            // lblcorreo
-            // 
-            this.lblcorreo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblcorreo.AutoSize = true;
-            this.lblcorreo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcorreo.ForeColor = System.Drawing.Color.White;
-            this.lblcorreo.Location = new System.Drawing.Point(91, 210);
-            this.lblcorreo.Name = "lblcorreo";
-            this.lblcorreo.Size = new System.Drawing.Size(53, 17);
-            this.lblcorreo.TabIndex = 17;
-            this.lblcorreo.Text = "Correo";
-            // 
             // lblNombre
             // 
             this.lblNombre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.Color.White;
-            this.lblNombre.Location = new System.Drawing.Point(94, 177);
+            this.lblNombre.Location = new System.Drawing.Point(94, 185);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(61, 17);
             this.lblNombre.TabIndex = 16;
@@ -154,93 +142,93 @@
             this.lblCargo.ForeColor = System.Drawing.Color.White;
             this.lblCargo.Location = new System.Drawing.Point(94, 143);
             this.lblCargo.Name = "lblCargo";
-            this.lblCargo.Size = new System.Drawing.Size(50, 17);
+            this.lblCargo.Size = new System.Drawing.Size(28, 17);
             this.lblCargo.TabIndex = 14;
-            this.lblCargo.Text = "Cargo";
+            this.lblCargo.Text = "Rol";
             this.lblCargo.Click += new System.EventHandler(this.lblCargo_Click);
             // 
-            // button6
+            // btnReportes
             // 
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(0, 490);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(250, 40);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "Reportes";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnReportes.FlatAppearance.BorderSize = 0;
+            this.btnReportes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReportes.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportes.ForeColor = System.Drawing.Color.White;
+            this.btnReportes.Image = ((System.Drawing.Image)(resources.GetObject("btnReportes.Image")));
+            this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReportes.Location = new System.Drawing.Point(0, 459);
+            this.btnReportes.Name = "btnReportes";
+            this.btnReportes.Size = new System.Drawing.Size(250, 40);
+            this.btnReportes.TabIndex = 6;
+            this.btnReportes.Text = "Reportes";
+            this.btnReportes.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnRoles
             // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(0, 444);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(250, 40);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Compras";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnRoles.FlatAppearance.BorderSize = 0;
+            this.btnRoles.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnRoles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRoles.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRoles.ForeColor = System.Drawing.Color.White;
+            this.btnRoles.Image = ((System.Drawing.Image)(resources.GetObject("btnRoles.Image")));
+            this.btnRoles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRoles.Location = new System.Drawing.Point(0, 413);
+            this.btnRoles.Name = "btnRoles";
+            this.btnRoles.Size = new System.Drawing.Size(250, 40);
+            this.btnRoles.TabIndex = 5;
+            this.btnRoles.Text = "Roles";
+            this.btnRoles.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnHorarios
             // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 398);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(250, 40);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Cargo";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnHorarios.FlatAppearance.BorderSize = 0;
+            this.btnHorarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnHorarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHorarios.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHorarios.ForeColor = System.Drawing.Color.White;
+            this.btnHorarios.Image = ((System.Drawing.Image)(resources.GetObject("btnHorarios.Image")));
+            this.btnHorarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHorarios.Location = new System.Drawing.Point(0, 367);
+            this.btnHorarios.Name = "btnHorarios";
+            this.btnHorarios.Size = new System.Drawing.Size(250, 40);
+            this.btnHorarios.TabIndex = 4;
+            this.btnHorarios.Text = "Horarios";
+            this.btnHorarios.UseVisualStyleBackColor = true;
+            this.btnHorarios.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button3
+            // btnEmpleados
             // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 306);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(250, 40);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Empleados";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnEmpleados.FlatAppearance.BorderSize = 0;
+            this.btnEmpleados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEmpleados.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmpleados.ForeColor = System.Drawing.Color.White;
+            this.btnEmpleados.Image = ((System.Drawing.Image)(resources.GetObject("btnEmpleados.Image")));
+            this.btnEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEmpleados.Location = new System.Drawing.Point(0, 266);
+            this.btnEmpleados.Name = "btnEmpleados";
+            this.btnEmpleados.Size = new System.Drawing.Size(250, 40);
+            this.btnEmpleados.TabIndex = 3;
+            this.btnEmpleados.Text = "Empleados";
+            this.btnEmpleados.UseVisualStyleBackColor = true;
+            this.btnEmpleados.Click += new System.EventHandler(this.button3_Click);
             // 
-            // btnprod
+            // btnUsuarios
             // 
-            this.btnprod.FlatAppearance.BorderSize = 0;
-            this.btnprod.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnprod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnprod.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnprod.ForeColor = System.Drawing.Color.White;
-            this.btnprod.Image = ((System.Drawing.Image)(resources.GetObject("btnprod.Image")));
-            this.btnprod.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnprod.Location = new System.Drawing.Point(0, 260);
-            this.btnprod.Name = "btnprod";
-            this.btnprod.Size = new System.Drawing.Size(250, 40);
-            this.btnprod.TabIndex = 1;
-            this.btnprod.Text = "Usuarios";
-            this.btnprod.UseVisualStyleBackColor = true;
-            this.btnprod.Click += new System.EventHandler(this.btnprod_Click);
+            this.btnUsuarios.FlatAppearance.BorderSize = 0;
+            this.btnUsuarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuarios.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsuarios.ForeColor = System.Drawing.Color.White;
+            this.btnUsuarios.Image = ((System.Drawing.Image)(resources.GetObject("btnUsuarios.Image")));
+            this.btnUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUsuarios.Location = new System.Drawing.Point(0, 220);
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.Size = new System.Drawing.Size(250, 40);
+            this.btnUsuarios.TabIndex = 1;
+            this.btnUsuarios.Text = "Usuarios";
+            this.btnUsuarios.UseVisualStyleBackColor = true;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnprod_Click);
             // 
             // btnlogoInicio
             // 
@@ -343,6 +331,22 @@
             this.panelContenedor.Size = new System.Drawing.Size(1050, 605);
             this.panelContenedor.TabIndex = 2;
             // 
+            // btnCargos
+            // 
+            this.btnCargos.FlatAppearance.BorderSize = 0;
+            this.btnCargos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnCargos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCargos.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCargos.ForeColor = System.Drawing.Color.White;
+            this.btnCargos.Image = ((System.Drawing.Image)(resources.GetObject("btnCargos.Image")));
+            this.btnCargos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCargos.Location = new System.Drawing.Point(0, 505);
+            this.btnCargos.Name = "btnCargos";
+            this.btnCargos.Size = new System.Drawing.Size(250, 40);
+            this.btnCargos.TabIndex = 19;
+            this.btnCargos.Text = "Cargos";
+            this.btnCargos.UseVisualStyleBackColor = true;
+            // 
             // MenuAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -381,17 +385,17 @@
         private System.Windows.Forms.PictureBox iconrestaurar;
         private System.Windows.Forms.PictureBox iconmaximizar;
         private System.Windows.Forms.PictureBox iconcerrar;
-        private System.Windows.Forms.Button btnprod;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label lblcorreo;
+        private System.Windows.Forms.Button btnUsuarios;
+        private System.Windows.Forms.Button btnReportes;
+        private System.Windows.Forms.Button btnRoles;
+        private System.Windows.Forms.Button btnHorarios;
+        private System.Windows.Forms.Button btnEmpleados;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lblCargo;
         private System.Windows.Forms.Button cerrarSesion;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnPlanillas;
+        private System.Windows.Forms.Button btnCargos;
     }
 }
 
