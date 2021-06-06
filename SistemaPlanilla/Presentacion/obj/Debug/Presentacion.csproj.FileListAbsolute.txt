@@ -45,3 +45,35 @@ C:\Users\kevin\Documents\Visual Studio 2015\repos\Sistema_Planilla\SistemaPlanil
 C:\Users\kevin\Documents\Visual Studio 2015\repos\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Usuarios.resources
 C:\Users\kevin\Documents\Visual Studio 2015\repos\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
 C:\Users\kevin\Documents\Visual Studio 2015\repos\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.Cache
+E:\Sistema_Planilla\SistemaPlanilla\Presentacion\bin\Debug\Presentacion.exe.config
+E:\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.exe
+E:\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.pdb
+E:\Sistema_Planilla\SistemaPlanilla\Presentacion\bin\Debug\Presentacion.exe
+E:\Sistema_Planilla\SistemaPlanilla\Presentacion\bin\Debug\Presentacion.pdb
+E:\Sistema_Planilla\SistemaPlanilla\Presentacion\bin\Debug\Logica.dll
+E:\Sistema_Planilla\SistemaPlanilla\Presentacion\bin\Debug\Logica.pdb
+E:\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.csprojResolveAssemblyReference.cache
+E:\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Login.resources
+E:\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.MenuEmpleado.resources
+E:\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.MenuAdmin.resources
+E:\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Empleados.resources
+E:\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Cargo.resources
+E:\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Usuarios.resources
+E:\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+E:\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.Cache
+C:\Users\ALUMNO21\Desktop\Sistema_Planilla\SistemaPlanilla\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\ALUMNO21\Desktop\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\ALUMNO21\Desktop\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\ALUMNO21\Desktop\Sistema_Planilla\SistemaPlanilla\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\ALUMNO21\Desktop\Sistema_Planilla\SistemaPlanilla\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\ALUMNO21\Desktop\Sistema_Planilla\SistemaPlanilla\Presentacion\bin\Debug\Logica.dll
+C:\Users\ALUMNO21\Desktop\Sistema_Planilla\SistemaPlanilla\Presentacion\bin\Debug\Logica.pdb
+C:\Users\ALUMNO21\Desktop\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.csprojResolveAssemblyReference.cache
+C:\Users\ALUMNO21\Desktop\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Login.resources
+C:\Users\ALUMNO21\Desktop\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.MenuEmpleado.resources
+C:\Users\ALUMNO21\Desktop\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.MenuAdmin.resources
+C:\Users\ALUMNO21\Desktop\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Empleados.resources
+C:\Users\ALUMNO21\Desktop\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Cargo.resources
+C:\Users\ALUMNO21\Desktop\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Usuarios.resources
+C:\Users\ALUMNO21\Desktop\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+C:\Users\ALUMNO21\Desktop\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.Cache

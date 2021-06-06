@@ -129,5 +129,19 @@ namespace Presentacion
         {
 
         }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Usuarios frmT = new Usuarios();
+            frmT.Show();
+        }
+
+        private void btnEmpleados_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Empleados frmT = new Empleados();
+            frmT.Show();
+        }
     }
 }

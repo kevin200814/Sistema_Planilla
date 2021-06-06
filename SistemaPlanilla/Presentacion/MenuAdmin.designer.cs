@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuAdmin));
             this.MenuVertical = new System.Windows.Forms.Panel();
+            this.btnCargos = new System.Windows.Forms.Button();
             this.btnPlanillas = new System.Windows.Forms.Button();
             this.cerrarSesion = new System.Windows.Forms.Button();
             this.lblNombre = new System.Windows.Forms.Label();
@@ -48,7 +49,6 @@
             this.iconcerrar = new System.Windows.Forms.PictureBox();
             this.btnMenu = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.btnCargos = new System.Windows.Forms.Button();
             this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnlogoInicio)).BeginInit();
@@ -80,6 +80,23 @@
             this.MenuVertical.Name = "MenuVertical";
             this.MenuVertical.Size = new System.Drawing.Size(250, 650);
             this.MenuVertical.TabIndex = 0;
+            // 
+            // btnCargos
+            // 
+            this.btnCargos.FlatAppearance.BorderSize = 0;
+            this.btnCargos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnCargos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCargos.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCargos.ForeColor = System.Drawing.Color.White;
+            this.btnCargos.Image = ((System.Drawing.Image)(resources.GetObject("btnCargos.Image")));
+            this.btnCargos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCargos.Location = new System.Drawing.Point(0, 505);
+            this.btnCargos.Name = "btnCargos";
+            this.btnCargos.Size = new System.Drawing.Size(250, 40);
+            this.btnCargos.TabIndex = 19;
+            this.btnCargos.Text = "Cargos";
+            this.btnCargos.UseVisualStyleBackColor = true;
+            this.btnCargos.Click += new System.EventHandler(this.btnCargos_Click);
             // 
             // btnPlanillas
             // 
@@ -330,22 +347,6 @@
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(1050, 605);
             this.panelContenedor.TabIndex = 2;
-            // 
-            // btnCargos
-            // 
-            this.btnCargos.FlatAppearance.BorderSize = 0;
-            this.btnCargos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnCargos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCargos.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargos.ForeColor = System.Drawing.Color.White;
-            this.btnCargos.Image = ((System.Drawing.Image)(resources.GetObject("btnCargos.Image")));
-            this.btnCargos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCargos.Location = new System.Drawing.Point(0, 505);
-            this.btnCargos.Name = "btnCargos";
-            this.btnCargos.Size = new System.Drawing.Size(250, 40);
-            this.btnCargos.TabIndex = 19;
-            this.btnCargos.Text = "Cargos";
-            this.btnCargos.UseVisualStyleBackColor = true;
             // 
             // MenuAdmin
             // 

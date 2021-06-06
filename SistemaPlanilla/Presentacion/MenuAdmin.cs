@@ -128,6 +128,11 @@ namespace Presentacion
 
         private void button4_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void btnCargos_Click(object sender, EventArgs e)
+        {
             this.Close();
             Cargo frmT = new Cargo();
             frmT.Show();

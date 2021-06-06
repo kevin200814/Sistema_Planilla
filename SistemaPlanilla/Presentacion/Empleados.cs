@@ -139,5 +139,31 @@ namespace Presentacion
         {
 
         }
+
+        private void MenuVertical_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnCargos_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Cargo frmT = new Cargo();
+            frmT.Show();
+        }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Usuarios frmT = new Usuarios();
+            frmT.Show();
+        }
+
+        private void btnEmpleados_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Empleados frmT = new Empleados();
+            frmT.Show();
+        }
     }
 }

@@ -6,3 +6,9 @@ C:\Users\Alexis\Desktop\Programación orientada a servicios\Sistema_Planilla\Sis
 C:\Users\Alexis\Desktop\Programación orientada a servicios\Sistema_Planilla\SistemaPlanilla\Logica\bin\Debug\Logica.pdb
 C:\Users\Alexis\Desktop\Programación orientada a servicios\Sistema_Planilla\SistemaPlanilla\Logica\obj\Debug\Logica.dll
 C:\Users\Alexis\Desktop\Programación orientada a servicios\Sistema_Planilla\SistemaPlanilla\Logica\obj\Debug\Logica.pdb
+E:\Sistema_Planilla\SistemaPlanilla\Logica\bin\Debug\Logica.dll
+E:\Sistema_Planilla\SistemaPlanilla\Logica\bin\Debug\Logica.pdb
+E:\Sistema_Planilla\SistemaPlanilla\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+E:\Sistema_Planilla\SistemaPlanilla\Logica\obj\Debug\Logica.dll
+E:\Sistema_Planilla\SistemaPlanilla\Logica\obj\Debug\Logica.pdb
+E:\Sistema_Planilla\SistemaPlanilla\Logica\bin\Debug\Logica.dll.config
