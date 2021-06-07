@@ -77,3 +77,7 @@ C:\Users\ALUMNO21\Desktop\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debu
 C:\Users\ALUMNO21\Desktop\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Usuarios.resources
 C:\Users\ALUMNO21\Desktop\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
 C:\Users\ALUMNO21\Desktop\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.Cache
+C:\Users\Alexis\Desktop\Programación orientada a servicios\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.csprojResolveAssemblyReference.cache
+C:\Users\Alexis\Desktop\Programación orientada a servicios\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.DetalleEmpleado.resources
+C:\Users\Alexis\Desktop\Programación orientada a servicios\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Horario.resources
+C:\Users\Alexis\Desktop\Programación orientada a servicios\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Roles.resources

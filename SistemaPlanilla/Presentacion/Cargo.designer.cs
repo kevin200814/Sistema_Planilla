@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cargo));
             this.MenuVertical = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnCargos = new System.Windows.Forms.Button();
             this.btnPlanillas = new System.Windows.Forms.Button();
             this.lblNombre = new System.Windows.Forms.Label();
@@ -84,6 +85,7 @@
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.RoyalBlue;
+            this.MenuVertical.Controls.Add(this.button1);
             this.MenuVertical.Controls.Add(this.btnCargos);
             this.MenuVertical.Controls.Add(this.btnPlanillas);
             this.MenuVertical.Controls.Add(this.lblNombre);
@@ -102,6 +104,23 @@
             this.MenuVertical.Size = new System.Drawing.Size(250, 650);
             this.MenuVertical.TabIndex = 0;
             // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(0, 532);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(250, 40);
+            this.button1.TabIndex = 40;
+            this.button1.Text = "Detalle Empleado";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // btnCargos
             // 
             this.btnCargos.FlatAppearance.BorderSize = 0;
@@ -117,6 +136,7 @@
             this.btnCargos.TabIndex = 39;
             this.btnCargos.Text = "Cargos";
             this.btnCargos.UseVisualStyleBackColor = true;
+            this.btnCargos.Click += new System.EventHandler(this.btnCargos_Click);
             // 
             // btnPlanillas
             // 
@@ -201,6 +221,7 @@
             this.btnRoles.TabIndex = 34;
             this.btnRoles.Text = "Roles";
             this.btnRoles.UseVisualStyleBackColor = true;
+            this.btnRoles.Click += new System.EventHandler(this.btnRoles_Click);
             // 
             // btnHorarios
             // 
@@ -217,6 +238,7 @@
             this.btnHorarios.TabIndex = 33;
             this.btnHorarios.Text = "Horarios";
             this.btnHorarios.UseVisualStyleBackColor = true;
+            this.btnHorarios.Click += new System.EventHandler(this.btnHorarios_Click);
             // 
             // btnEmpleados
             // 
@@ -257,7 +279,7 @@
             this.cerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cerrarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cerrarSesion.ForeColor = System.Drawing.Color.Transparent;
-            this.cerrarSesion.Location = new System.Drawing.Point(3, 563);
+            this.cerrarSesion.Location = new System.Drawing.Point(6, 583);
             this.cerrarSesion.Name = "cerrarSesion";
             this.cerrarSesion.Size = new System.Drawing.Size(241, 40);
             this.cerrarSesion.TabIndex = 18;
@@ -583,6 +605,7 @@
         private System.Windows.Forms.Button btnHorarios;
         private System.Windows.Forms.Button btnEmpleados;
         private System.Windows.Forms.Button btnUsuarios;
+        private System.Windows.Forms.Button button1;
     }
 }
 
