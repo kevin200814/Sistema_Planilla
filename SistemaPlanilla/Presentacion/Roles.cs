@@ -112,5 +112,48 @@ namespace Presentacion
         {
 
         }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Usuarios frmT = new Usuarios();
+            frmT.Show();
+        }
+
+        private void btnEmpleados_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Empleados frmT = new Empleados();
+            frmT.Show();
+        }
+
+        private void btnHorarios_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Horario frmT = new Horario();
+            frmT.Show();
+        }
+
+        private void btnRoles_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Roles frmT = new Roles();
+            frmT.Show();
+        }
+
+        private void btnCargos_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Cargo frmT = new Cargo();
+            frmT.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            this.Close();
+            DetalleEmpleado frmT = new DetalleEmpleado();
+            frmT.Show();
+        }
     }
 }

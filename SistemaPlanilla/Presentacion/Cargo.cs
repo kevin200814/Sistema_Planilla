@@ -153,7 +153,9 @@ namespace Presentacion
 
         private void btnRoles_Click(object sender, EventArgs e)
         {
-
+            this.Close();
+            Roles frmT = new Roles();
+            frmT.Show();
         }
 
         private void btnCargos_Click(object sender, EventArgs e)
@@ -168,6 +170,11 @@ namespace Presentacion
             this.Close();
             DetalleEmpleado frmT = new DetalleEmpleado();
             frmT.Show();
+        }
+
+        private void btnPlanillas_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

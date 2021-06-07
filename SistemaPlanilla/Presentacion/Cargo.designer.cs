@@ -153,6 +153,7 @@
             this.btnPlanillas.TabIndex = 31;
             this.btnPlanillas.Text = "Planillas";
             this.btnPlanillas.UseVisualStyleBackColor = true;
+            this.btnPlanillas.Click += new System.EventHandler(this.btnPlanillas_Click);
             // 
             // lblNombre
             // 

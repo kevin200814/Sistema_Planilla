@@ -177,5 +177,12 @@ namespace Presentacion
             DetalleEmpleado frmT = new DetalleEmpleado();
             frmT.Show();
         }
+
+        private void btnRoles_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Roles frmT = new Roles();
+            frmT.Show();
+        }
     }
 }
