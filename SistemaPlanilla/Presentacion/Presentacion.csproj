@@ -76,6 +76,24 @@
     <Compile Include="Cargo.designer.cs">
       <DependentUpon>Cargo.cs</DependentUpon>
     </Compile>
+    <Compile Include="DetalleEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetalleEmpleado.designer.cs">
+      <DependentUpon>DetalleEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Horario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Horario.designer.cs">
+      <DependentUpon>Horario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Roles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Roles.designer.cs">
+      <DependentUpon>Roles.cs</DependentUpon>
+    </Compile>
     <Compile Include="Usuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +116,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cargo.resx">
       <DependentUpon>Cargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetalleEmpleado.resx">
+      <DependentUpon>DetalleEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Horario.resx">
+      <DependentUpon>Horario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Roles.resx">
+      <DependentUpon>Roles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usuarios.resx">
       <DependentUpon>Usuarios.cs</DependentUpon>

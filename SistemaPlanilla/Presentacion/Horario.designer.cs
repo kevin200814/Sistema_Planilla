@@ -1,6 +1,6 @@
 ﻿namespace Presentacion
 {
-    partial class MenuAdmin
+    partial class Horario
     {
         /// <summary>
         /// Variable del diseñador requerida.
@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuAdmin));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Horario));
             this.MenuVertical = new System.Windows.Forms.Panel();
-            this.DetalleEmpleado = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnCargos = new System.Windows.Forms.Button();
             this.btnPlanillas = new System.Windows.Forms.Button();
             this.lblNombre = new System.Windows.Forms.Label();
@@ -64,7 +64,7 @@
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.RoyalBlue;
-            this.MenuVertical.Controls.Add(this.DetalleEmpleado);
+            this.MenuVertical.Controls.Add(this.button1);
             this.MenuVertical.Controls.Add(this.btnCargos);
             this.MenuVertical.Controls.Add(this.btnPlanillas);
             this.MenuVertical.Controls.Add(this.lblNombre);
@@ -82,24 +82,23 @@
             this.MenuVertical.Name = "MenuVertical";
             this.MenuVertical.Size = new System.Drawing.Size(250, 650);
             this.MenuVertical.TabIndex = 0;
-            this.MenuVertical.Paint += new System.Windows.Forms.PaintEventHandler(this.MenuVertical_Paint);
             // 
-            // DetalleEmpleado
+            // button1
             // 
-            this.DetalleEmpleado.FlatAppearance.BorderSize = 0;
-            this.DetalleEmpleado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.DetalleEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DetalleEmpleado.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DetalleEmpleado.ForeColor = System.Drawing.Color.White;
-            this.DetalleEmpleado.Image = ((System.Drawing.Image)(resources.GetObject("DetalleEmpleado.Image")));
-            this.DetalleEmpleado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.DetalleEmpleado.Location = new System.Drawing.Point(0, 532);
-            this.DetalleEmpleado.Name = "DetalleEmpleado";
-            this.DetalleEmpleado.Size = new System.Drawing.Size(250, 40);
-            this.DetalleEmpleado.TabIndex = 53;
-            this.DetalleEmpleado.Text = "Detalle Empleado";
-            this.DetalleEmpleado.UseVisualStyleBackColor = true;
-            this.DetalleEmpleado.Click += new System.EventHandler(this.button1_Click);
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(0, 532);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(250, 40);
+            this.button1.TabIndex = 66;
+            this.button1.Text = "Detalle Empleado";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnCargos
             // 
@@ -113,10 +112,10 @@
             this.btnCargos.Location = new System.Drawing.Point(0, 486);
             this.btnCargos.Name = "btnCargos";
             this.btnCargos.Size = new System.Drawing.Size(250, 40);
-            this.btnCargos.TabIndex = 52;
+            this.btnCargos.TabIndex = 65;
             this.btnCargos.Text = "Cargos";
             this.btnCargos.UseVisualStyleBackColor = true;
-            this.btnCargos.Click += new System.EventHandler(this.btnCargos_Click_1);
+            this.btnCargos.Click += new System.EventHandler(this.btnCargos_Click);
             // 
             // btnPlanillas
             // 
@@ -130,7 +129,7 @@
             this.btnPlanillas.Location = new System.Drawing.Point(0, 293);
             this.btnPlanillas.Name = "btnPlanillas";
             this.btnPlanillas.Size = new System.Drawing.Size(250, 40);
-            this.btnPlanillas.TabIndex = 44;
+            this.btnPlanillas.TabIndex = 57;
             this.btnPlanillas.Text = "Planillas";
             this.btnPlanillas.UseVisualStyleBackColor = true;
             // 
@@ -143,7 +142,7 @@
             this.lblNombre.Location = new System.Drawing.Point(94, 166);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(61, 17);
-            this.lblNombre.TabIndex = 51;
+            this.lblNombre.TabIndex = 64;
             this.lblNombre.Text = "Nombre";
             // 
             // pictureBox2
@@ -155,7 +154,7 @@
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(73, 71);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 50;
+            this.pictureBox2.TabIndex = 63;
             this.pictureBox2.TabStop = false;
             // 
             // lblCargo
@@ -167,7 +166,7 @@
             this.lblCargo.Location = new System.Drawing.Point(94, 124);
             this.lblCargo.Name = "lblCargo";
             this.lblCargo.Size = new System.Drawing.Size(28, 17);
-            this.lblCargo.TabIndex = 49;
+            this.lblCargo.TabIndex = 62;
             this.lblCargo.Text = "Rol";
             // 
             // btnReportes
@@ -182,7 +181,7 @@
             this.btnReportes.Location = new System.Drawing.Point(0, 440);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Size = new System.Drawing.Size(250, 40);
-            this.btnReportes.TabIndex = 48;
+            this.btnReportes.TabIndex = 61;
             this.btnReportes.Text = "Reportes";
             this.btnReportes.UseVisualStyleBackColor = true;
             // 
@@ -198,7 +197,7 @@
             this.btnRoles.Location = new System.Drawing.Point(0, 394);
             this.btnRoles.Name = "btnRoles";
             this.btnRoles.Size = new System.Drawing.Size(250, 40);
-            this.btnRoles.TabIndex = 47;
+            this.btnRoles.TabIndex = 60;
             this.btnRoles.Text = "Roles";
             this.btnRoles.UseVisualStyleBackColor = true;
             this.btnRoles.Click += new System.EventHandler(this.btnRoles_Click);
@@ -215,7 +214,7 @@
             this.btnHorarios.Location = new System.Drawing.Point(0, 348);
             this.btnHorarios.Name = "btnHorarios";
             this.btnHorarios.Size = new System.Drawing.Size(250, 40);
-            this.btnHorarios.TabIndex = 46;
+            this.btnHorarios.TabIndex = 59;
             this.btnHorarios.Text = "Horarios";
             this.btnHorarios.UseVisualStyleBackColor = true;
             this.btnHorarios.Click += new System.EventHandler(this.btnHorarios_Click);
@@ -232,7 +231,7 @@
             this.btnEmpleados.Location = new System.Drawing.Point(0, 247);
             this.btnEmpleados.Name = "btnEmpleados";
             this.btnEmpleados.Size = new System.Drawing.Size(250, 40);
-            this.btnEmpleados.TabIndex = 45;
+            this.btnEmpleados.TabIndex = 58;
             this.btnEmpleados.Text = "Empleados";
             this.btnEmpleados.UseVisualStyleBackColor = true;
             this.btnEmpleados.Click += new System.EventHandler(this.btnEmpleados_Click);
@@ -249,7 +248,7 @@
             this.btnUsuarios.Location = new System.Drawing.Point(0, 201);
             this.btnUsuarios.Name = "btnUsuarios";
             this.btnUsuarios.Size = new System.Drawing.Size(250, 40);
-            this.btnUsuarios.TabIndex = 43;
+            this.btnUsuarios.TabIndex = 56;
             this.btnUsuarios.Text = "Usuarios";
             this.btnUsuarios.UseVisualStyleBackColor = true;
             this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
@@ -262,7 +261,7 @@
             this.cerrarSesion.Location = new System.Drawing.Point(6, 583);
             this.cerrarSesion.Name = "cerrarSesion";
             this.cerrarSesion.Size = new System.Drawing.Size(241, 40);
-            this.cerrarSesion.TabIndex = 42;
+            this.cerrarSesion.TabIndex = 55;
             this.cerrarSesion.Text = "Cerrar Sesion";
             this.cerrarSesion.UseVisualStyleBackColor = true;
             // 
@@ -274,7 +273,7 @@
             this.btnlogoInicio.Name = "btnlogoInicio";
             this.btnlogoInicio.Size = new System.Drawing.Size(198, 98);
             this.btnlogoInicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnlogoInicio.TabIndex = 41;
+            this.btnlogoInicio.TabIndex = 54;
             this.btnlogoInicio.TabStop = false;
             // 
             // BarraTitulo
@@ -366,7 +365,7 @@
             this.panelContenedor.Size = new System.Drawing.Size(1050, 605);
             this.panelContenedor.TabIndex = 2;
             // 
-            // MenuAdmin
+            // Horario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -376,7 +375,7 @@
             this.Controls.Add(this.MenuVertical);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "MenuAdmin";
+            this.Name = "Horario";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.MenuVertical.ResumeLayout(false);
@@ -403,7 +402,7 @@
         private System.Windows.Forms.PictureBox iconrestaurar;
         private System.Windows.Forms.PictureBox iconmaximizar;
         private System.Windows.Forms.PictureBox iconcerrar;
-        private System.Windows.Forms.Button DetalleEmpleado;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnCargos;
         private System.Windows.Forms.Button btnPlanillas;
         private System.Windows.Forms.Label lblNombre;

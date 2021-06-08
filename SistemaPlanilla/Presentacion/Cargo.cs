@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using Logica;
 
 
 
@@ -142,6 +143,82 @@ namespace Presentacion
             this.Close();
             Empleados frmT = new Empleados();
             frmT.Show();
+        }
+
+        private void btnHorarios_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Horario frmT = new Horario();
+            frmT.Show();
+        }
+
+        private void btnRoles_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Roles frmT = new Roles();
+            frmT.Show();
+        }
+
+        private void btnCargos_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Cargo frmT = new Cargo();
+            frmT.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            DetalleEmpleado frmT = new DetalleEmpleado();
+            frmT.Show();
+        }
+
+        private void btnPlanillas_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPago_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ControlCargo objCargo = new ControlCargo();
+            try
+            {
+                objCargo.Nombre = txtCargo.Text;
+                objCargo.Tipo_Pago = txtPago.Text;
+                objCargo.Salario = float.Parse(txtSalario.Text);
+                objCargo.Pagod = float.Parse(txtPagoDiurno.Text);
+                objCargo.PagoN = float.Parse(txtPagoNocturno.Text);
+
+                bool respuestaSQL = objCargo.InsertarCargo();
+                if (respuestaSQL == true)
+                {
+                    MessageBox.Show("Los datos del nuevo cargo fueron insertados correctamente");
+                    txtCargo.Text = "Nombre cargo";
+                    txtPago.Text = "Tipo Pago";
+                    txtSalario.Text = "Salario de cargo";
+                    txtPagoDiurno.Text = "Pago diurno";
+                    txtPagoNocturno.Text = "Pago nocturno";
+                   
+                }
+                else
+                {
+                    MessageBox.Show(objCargo.Mensaje);
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show("Error!: " + Ex.Message + " " + objCargo.Mensaje);
+            }
+        }
+
+        private void txtSalario_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

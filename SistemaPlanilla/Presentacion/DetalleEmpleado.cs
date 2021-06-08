@@ -8,14 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using Logica;
 
 
 
 namespace Presentacion
 {
-    public partial class Empleados : Form
+    public partial class DetalleEmpleado : Form
     {
-        public Empleados()
+        public DetalleEmpleado()
         {
             InitializeComponent();
             CargarDataUsuario();
@@ -82,9 +83,6 @@ namespace Presentacion
         private void btnprod_Click(object sender, EventArgs e)
         {
             //AbrirFormEnPanel(new Productos());
-            this.Close();
-            Usuarios frmT = new Usuarios();
-            frmT.Show();
         }
 
         private void btnlogoInicio_Click(object sender, EventArgs e)
@@ -106,9 +104,7 @@ namespace Presentacion
         }
 
         public void CargarDataUsuario() {
-          /*  lblNombre.Text = LoginUsuarioCache.nombre + ", "+ LoginUsuarioCache.apellido;
-            lblCargo.Text = LoginUsuarioCache.cargo;
-            lblcorreo.Text = LoginUsuarioCache.email;*/
+           
             
 
         }
@@ -116,40 +112,6 @@ namespace Presentacion
         private void lblCargo_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            Cargo frmT = new Cargo();
-            frmT.Show();
-        }
-
-        private void tabPage6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void MenuVertical_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btnCargos_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            Cargo frmT = new Cargo();
-            frmT.Show();
         }
 
         private void btnUsuarios_Click(object sender, EventArgs e)
@@ -160,20 +122,6 @@ namespace Presentacion
         }
 
         private void btnEmpleados_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            Empleados frmT = new Empleados();
-            frmT.Show();
-        }
-
-        private void btnUsuarios_Click_1(object sender, EventArgs e)
-        {
-            this.Close();
-            Usuarios frmT = new Usuarios();
-            frmT.Show();
-        }
-
-        private void btnEmpleados_Click_1(object sender, EventArgs e)
         {
             this.Close();
             Empleados frmT = new Empleados();
@@ -194,7 +142,7 @@ namespace Presentacion
             frmT.Show();
         }
 
-        private void btnCargos_Click_1(object sender, EventArgs e)
+        private void btnCargos_Click(object sender, EventArgs e)
         {
             this.Close();
             Cargo frmT = new Cargo();
@@ -207,5 +155,52 @@ namespace Presentacion
             DetalleEmpleado frmT = new DetalleEmpleado();
             frmT.Show();
         }
+
+        private void txtCarnet_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ControlDetalleEmpleado objDetalle = new ControlDetalleEmpleado();
+
+            try
+            {
+                objDetalle.Carnet = int.Parse(txtCarnet.Text);
+                objDetalle.Bono = float.Parse(txtBono.Text);
+                objDetalle.Permiso = float.Parse(txtPermiso.Text);
+                objDetalle.Horas_extras = int.Parse(txtHoras.Text);
+                objDetalle.Dias_extras = int.Parse(txtDias.Text);
+
+                bool respuestaSQL = objDetalle.InsertarDetalle();
+                if (respuestaSQL == true)
+                {
+                    MessageBox.Show("Los datos del nuevo Detalle de empleado fueron insertados correctamente");
+                    txtCarnet.Text = "Nombre cargo";
+                    txtBono.Text = "Tipo Pago";
+                    txtPermiso.Text = "Salario de cargo";
+                    txtHoras.Text = "Pago diurno";
+                    txtDias.Text = "Pago nocturno";
+
+                }
+                else
+                {
+                    MessageBox.Show(objDetalle.Mensaje);
+                }
+                
+            }
+            catch(Exception Ex)
+            {
+                MessageBox.Show("Error!: " + Ex.Message + " " + objDetalle.Mensaje);
+            }
+        }
+
+
     }
 }

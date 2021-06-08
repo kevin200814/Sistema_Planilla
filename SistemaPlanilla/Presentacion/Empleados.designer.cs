@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Empleados));
             this.MenuVertical = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnCargos = new System.Windows.Forms.Button();
             this.btnPlanillas = new System.Windows.Forms.Button();
             this.lblNombre = new System.Windows.Forms.Label();
@@ -84,6 +85,7 @@
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.RoyalBlue;
+            this.MenuVertical.Controls.Add(this.button1);
             this.MenuVertical.Controls.Add(this.btnCargos);
             this.MenuVertical.Controls.Add(this.btnPlanillas);
             this.MenuVertical.Controls.Add(this.lblNombre);
@@ -103,6 +105,23 @@
             this.MenuVertical.TabIndex = 0;
             this.MenuVertical.Paint += new System.Windows.Forms.PaintEventHandler(this.MenuVertical_Paint);
             // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(0, 532);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(250, 40);
+            this.button1.TabIndex = 53;
+            this.button1.Text = "Detalle Empleado";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // btnCargos
             // 
             this.btnCargos.FlatAppearance.BorderSize = 0;
@@ -112,13 +131,13 @@
             this.btnCargos.ForeColor = System.Drawing.Color.White;
             this.btnCargos.Image = ((System.Drawing.Image)(resources.GetObject("btnCargos.Image")));
             this.btnCargos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCargos.Location = new System.Drawing.Point(0, 502);
+            this.btnCargos.Location = new System.Drawing.Point(0, 486);
             this.btnCargos.Name = "btnCargos";
             this.btnCargos.Size = new System.Drawing.Size(250, 40);
-            this.btnCargos.TabIndex = 29;
+            this.btnCargos.TabIndex = 52;
             this.btnCargos.Text = "Cargos";
             this.btnCargos.UseVisualStyleBackColor = true;
-            this.btnCargos.Click += new System.EventHandler(this.btnCargos_Click);
+            this.btnCargos.Click += new System.EventHandler(this.btnCargos_Click_1);
             // 
             // btnPlanillas
             // 
@@ -129,10 +148,10 @@
             this.btnPlanillas.ForeColor = System.Drawing.Color.White;
             this.btnPlanillas.Image = ((System.Drawing.Image)(resources.GetObject("btnPlanillas.Image")));
             this.btnPlanillas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPlanillas.Location = new System.Drawing.Point(0, 309);
+            this.btnPlanillas.Location = new System.Drawing.Point(0, 293);
             this.btnPlanillas.Name = "btnPlanillas";
             this.btnPlanillas.Size = new System.Drawing.Size(250, 40);
-            this.btnPlanillas.TabIndex = 21;
+            this.btnPlanillas.TabIndex = 44;
             this.btnPlanillas.Text = "Planillas";
             this.btnPlanillas.UseVisualStyleBackColor = true;
             // 
@@ -142,10 +161,10 @@
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.Color.White;
-            this.lblNombre.Location = new System.Drawing.Point(94, 182);
+            this.lblNombre.Location = new System.Drawing.Point(94, 166);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(61, 17);
-            this.lblNombre.TabIndex = 28;
+            this.lblNombre.TabIndex = 51;
             this.lblNombre.Text = "Nombre";
             // 
             // pictureBox2
@@ -153,11 +172,11 @@
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox2.BackColor = System.Drawing.Color.Lavender;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(3, 140);
+            this.pictureBox2.Location = new System.Drawing.Point(3, 124);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(73, 71);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 27;
+            this.pictureBox2.TabIndex = 50;
             this.pictureBox2.TabStop = false;
             // 
             // lblCargo
@@ -166,10 +185,10 @@
             this.lblCargo.AutoSize = true;
             this.lblCargo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCargo.ForeColor = System.Drawing.Color.White;
-            this.lblCargo.Location = new System.Drawing.Point(94, 140);
+            this.lblCargo.Location = new System.Drawing.Point(94, 124);
             this.lblCargo.Name = "lblCargo";
             this.lblCargo.Size = new System.Drawing.Size(28, 17);
-            this.lblCargo.TabIndex = 26;
+            this.lblCargo.TabIndex = 49;
             this.lblCargo.Text = "Rol";
             // 
             // btnReportes
@@ -181,10 +200,10 @@
             this.btnReportes.ForeColor = System.Drawing.Color.White;
             this.btnReportes.Image = ((System.Drawing.Image)(resources.GetObject("btnReportes.Image")));
             this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportes.Location = new System.Drawing.Point(0, 456);
+            this.btnReportes.Location = new System.Drawing.Point(0, 440);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Size = new System.Drawing.Size(250, 40);
-            this.btnReportes.TabIndex = 25;
+            this.btnReportes.TabIndex = 48;
             this.btnReportes.Text = "Reportes";
             this.btnReportes.UseVisualStyleBackColor = true;
             // 
@@ -197,12 +216,13 @@
             this.btnRoles.ForeColor = System.Drawing.Color.White;
             this.btnRoles.Image = ((System.Drawing.Image)(resources.GetObject("btnRoles.Image")));
             this.btnRoles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRoles.Location = new System.Drawing.Point(0, 410);
+            this.btnRoles.Location = new System.Drawing.Point(0, 394);
             this.btnRoles.Name = "btnRoles";
             this.btnRoles.Size = new System.Drawing.Size(250, 40);
-            this.btnRoles.TabIndex = 24;
+            this.btnRoles.TabIndex = 47;
             this.btnRoles.Text = "Roles";
             this.btnRoles.UseVisualStyleBackColor = true;
+            this.btnRoles.Click += new System.EventHandler(this.btnRoles_Click);
             // 
             // btnHorarios
             // 
@@ -213,12 +233,13 @@
             this.btnHorarios.ForeColor = System.Drawing.Color.White;
             this.btnHorarios.Image = ((System.Drawing.Image)(resources.GetObject("btnHorarios.Image")));
             this.btnHorarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHorarios.Location = new System.Drawing.Point(0, 364);
+            this.btnHorarios.Location = new System.Drawing.Point(0, 348);
             this.btnHorarios.Name = "btnHorarios";
             this.btnHorarios.Size = new System.Drawing.Size(250, 40);
-            this.btnHorarios.TabIndex = 23;
+            this.btnHorarios.TabIndex = 46;
             this.btnHorarios.Text = "Horarios";
             this.btnHorarios.UseVisualStyleBackColor = true;
+            this.btnHorarios.Click += new System.EventHandler(this.btnHorarios_Click);
             // 
             // btnEmpleados
             // 
@@ -229,13 +250,13 @@
             this.btnEmpleados.ForeColor = System.Drawing.Color.White;
             this.btnEmpleados.Image = ((System.Drawing.Image)(resources.GetObject("btnEmpleados.Image")));
             this.btnEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmpleados.Location = new System.Drawing.Point(0, 263);
+            this.btnEmpleados.Location = new System.Drawing.Point(0, 247);
             this.btnEmpleados.Name = "btnEmpleados";
             this.btnEmpleados.Size = new System.Drawing.Size(250, 40);
-            this.btnEmpleados.TabIndex = 22;
+            this.btnEmpleados.TabIndex = 45;
             this.btnEmpleados.Text = "Empleados";
             this.btnEmpleados.UseVisualStyleBackColor = true;
-            this.btnEmpleados.Click += new System.EventHandler(this.btnEmpleados_Click);
+            this.btnEmpleados.Click += new System.EventHandler(this.btnEmpleados_Click_1);
             // 
             // btnUsuarios
             // 
@@ -246,26 +267,25 @@
             this.btnUsuarios.ForeColor = System.Drawing.Color.White;
             this.btnUsuarios.Image = ((System.Drawing.Image)(resources.GetObject("btnUsuarios.Image")));
             this.btnUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsuarios.Location = new System.Drawing.Point(0, 217);
+            this.btnUsuarios.Location = new System.Drawing.Point(0, 201);
             this.btnUsuarios.Name = "btnUsuarios";
             this.btnUsuarios.Size = new System.Drawing.Size(250, 40);
-            this.btnUsuarios.TabIndex = 20;
+            this.btnUsuarios.TabIndex = 43;
             this.btnUsuarios.Text = "Usuarios";
             this.btnUsuarios.UseVisualStyleBackColor = true;
-            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click_1);
             // 
             // cerrarSesion
             // 
             this.cerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cerrarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cerrarSesion.ForeColor = System.Drawing.Color.Transparent;
-            this.cerrarSesion.Location = new System.Drawing.Point(3, 563);
+            this.cerrarSesion.Location = new System.Drawing.Point(6, 583);
             this.cerrarSesion.Name = "cerrarSesion";
             this.cerrarSesion.Size = new System.Drawing.Size(241, 40);
-            this.cerrarSesion.TabIndex = 18;
+            this.cerrarSesion.TabIndex = 42;
             this.cerrarSesion.Text = "Cerrar Sesion";
             this.cerrarSesion.UseVisualStyleBackColor = true;
-            this.cerrarSesion.Click += new System.EventHandler(this.cerrarSesion_Click);
             // 
             // btnlogoInicio
             // 
@@ -275,9 +295,8 @@
             this.btnlogoInicio.Name = "btnlogoInicio";
             this.btnlogoInicio.Size = new System.Drawing.Size(198, 98);
             this.btnlogoInicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnlogoInicio.TabIndex = 0;
+            this.btnlogoInicio.TabIndex = 41;
             this.btnlogoInicio.TabStop = false;
-            this.btnlogoInicio.Click += new System.EventHandler(this.btnlogoInicio_Click);
             // 
             // BarraTitulo
             // 
@@ -555,7 +574,6 @@
         #endregion
 
         private System.Windows.Forms.Panel MenuVertical;
-        private System.Windows.Forms.PictureBox btnlogoInicio;
         private System.Windows.Forms.Panel BarraTitulo;
         private System.Windows.Forms.PictureBox btnMenu;
         private System.Windows.Forms.Panel panelContenedor;
@@ -563,7 +581,6 @@
         private System.Windows.Forms.PictureBox iconrestaurar;
         private System.Windows.Forms.PictureBox iconmaximizar;
         private System.Windows.Forms.PictureBox iconcerrar;
-        private System.Windows.Forms.Button cerrarSesion;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
@@ -577,6 +594,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnCargos;
         private System.Windows.Forms.Button btnPlanillas;
         private System.Windows.Forms.Label lblNombre;
@@ -587,6 +605,8 @@
         private System.Windows.Forms.Button btnHorarios;
         private System.Windows.Forms.Button btnEmpleados;
         private System.Windows.Forms.Button btnUsuarios;
+        private System.Windows.Forms.Button cerrarSesion;
+        private System.Windows.Forms.PictureBox btnlogoInicio;
     }
 }
 

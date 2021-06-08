@@ -21,7 +21,7 @@ namespace Logica
         public Conexion()
         {
             //Cadena de Conexion Para SQL Server:
-            String cadenaconexion = "Data Source=LAB05-PC04\\SQLEXPRESS;Initial Catalog=BD_PLANILLA;User ID=sa;Password=Usam2021";
+            String cadenaconexion = "Data Source=.;Initial Catalog=BD_PLANILLA;Integrated Security=True";
             conn = new SqlConnection(cadenaconexion);
         }
 
