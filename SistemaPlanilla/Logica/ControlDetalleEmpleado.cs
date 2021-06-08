@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Logica
 {
-    public class ControlDetalleEmpleado
+    public class ControlDetalleEmpleado : Conexion
     {
         private int NUM_CARNET;
         private float BONO_EMPLEADO;
-        private float PERMISO_CON_SUELDO;
+        private float PERMISO_CON_SUELDO; 
         private int HORAS_EXTRAS;
-        private DateTime DIAS_EXTRAS;
+        private int DIAS_EXTRAS;
 
         public int Carnet
         {
@@ -38,7 +38,7 @@ namespace Logica
             set { HORAS_EXTRAS = value; }
         }
 
-        public DateTime Dias_extras
+        public int Dias_extras
         {
             get { return DIAS_EXTRAS; }
             set { DIAS_EXTRAS = value; }

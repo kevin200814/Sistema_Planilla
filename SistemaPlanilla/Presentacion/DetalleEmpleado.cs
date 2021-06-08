@@ -176,7 +176,7 @@ namespace Presentacion
                 objDetalle.Bono = float.Parse(txtBono.Text);
                 objDetalle.Permiso = float.Parse(txtPermiso.Text);
                 objDetalle.Horas_extras = int.Parse(txtHoras.Text);
-                objDetalle.Dias_extras = Convert.ToDateTime(txtDias.Text);
+                objDetalle.Dias_extras = int.Parse(txtDias.Text);
 
                 bool respuestaSQL = objDetalle.InsertarDetalle();
                 if (respuestaSQL == true)
