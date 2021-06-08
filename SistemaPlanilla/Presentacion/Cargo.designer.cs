@@ -50,19 +50,19 @@
             this.iconcerrar = new System.Windows.Forms.PictureBox();
             this.btnMenu = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.label6 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.txtCargo = new System.Windows.Forms.TextBox();
+            this.txtPago = new System.Windows.Forms.TextBox();
+            this.txtSalario = new System.Windows.Forms.TextBox();
+            this.txtPagoDiurno = new System.Windows.Forms.TextBox();
+            this.txtPagoNocturno = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnlogoInicio)).BeginInit();
@@ -73,13 +73,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconcerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
             this.panelContenedor.SuspendLayout();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.tabPage5.SuspendLayout();
-            this.tabPage6.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // MenuVertical
@@ -390,19 +387,53 @@
             this.panelContenedor.Size = new System.Drawing.Size(1050, 605);
             this.panelContenedor.TabIndex = 2;
             // 
-            // tabControl1
+            // tabPage3
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Controls.Add(this.tabPage6);
-            this.tabControl1.Location = new System.Drawing.Point(3, 3);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1047, 602);
-            this.tabControl1.TabIndex = 0;
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tabPage3.Controls.Add(this.label3);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1039, 576);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Eliminar Cargo";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(508, 73);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(220, 36);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Eliminar Cargo";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tabPage2.Controls.Add(this.button2);
+            this.tabPage2.Controls.Add(this.txtPagoNocturno);
+            this.tabPage2.Controls.Add(this.txtPagoDiurno);
+            this.tabPage2.Controls.Add(this.txtSalario);
+            this.tabPage2.Controls.Add(this.txtPago);
+            this.tabPage2.Controls.Add(this.txtCargo);
+            this.tabPage2.Controls.Add(this.label2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1039, 576);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Registrar Cargo";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(498, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(233, 36);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Registrar Cargo";
             // 
             // tabPage1
             // 
@@ -425,110 +456,81 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Cargos Registrados";
             // 
-            // tabPage2
+            // tabControl1
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tabPage2.Controls.Add(this.label2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1039, 576);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Registrar Cargo";
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Location = new System.Drawing.Point(3, 3);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(1047, 602);
+            this.tabControl1.TabIndex = 0;
             // 
-            // label2
+            // txtCargo
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(489, 73);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(233, 36);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Registrar Cargo";
+            this.txtCargo.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCargo.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtCargo.Location = new System.Drawing.Point(490, 161);
+            this.txtCargo.Name = "txtCargo";
+            this.txtCargo.Size = new System.Drawing.Size(241, 37);
+            this.txtCargo.TabIndex = 1;
+            this.txtCargo.Text = "Nombre cargo";
             // 
-            // tabPage3
+            // txtPago
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tabPage3.Controls.Add(this.label3);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1039, 576);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Eliminar Cargo";
+            this.txtPago.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPago.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtPago.Location = new System.Drawing.Point(490, 221);
+            this.txtPago.Name = "txtPago";
+            this.txtPago.Size = new System.Drawing.Size(241, 37);
+            this.txtPago.TabIndex = 2;
+            this.txtPago.Text = "Tipo Pago";
+            this.txtPago.TextChanged += new System.EventHandler(this.txtPago_TextChanged);
             // 
-            // label3
+            // txtSalario
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(508, 73);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(220, 36);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Eliminar Cargo";
+            this.txtSalario.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSalario.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtSalario.Location = new System.Drawing.Point(490, 281);
+            this.txtSalario.Name = "txtSalario";
+            this.txtSalario.Size = new System.Drawing.Size(241, 37);
+            this.txtSalario.TabIndex = 3;
+            this.txtSalario.Text = "Salario de cargo";
+            this.txtSalario.TextChanged += new System.EventHandler(this.txtSalario_TextChanged);
             // 
-            // tabPage4
+            // txtPagoDiurno
             // 
-            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tabPage4.Controls.Add(this.label4);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1039, 576);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Empleado Detalles";
+            this.txtPagoDiurno.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPagoDiurno.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtPagoDiurno.Location = new System.Drawing.Point(490, 354);
+            this.txtPagoDiurno.Name = "txtPagoDiurno";
+            this.txtPagoDiurno.Size = new System.Drawing.Size(241, 37);
+            this.txtPagoDiurno.TabIndex = 4;
+            this.txtPagoDiurno.Text = "Pago diurno";
             // 
-            // label4
+            // txtPagoNocturno
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(477, 73);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(333, 36);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Detalles del Empleado";
+            this.txtPagoNocturno.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPagoNocturno.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtPagoNocturno.Location = new System.Drawing.Point(490, 419);
+            this.txtPagoNocturno.Name = "txtPagoNocturno";
+            this.txtPagoNocturno.Size = new System.Drawing.Size(241, 37);
+            this.txtPagoNocturno.TabIndex = 5;
+            this.txtPagoNocturno.Text = "Pago nocturno";
             // 
-            // tabPage5
+            // button2
             // 
-            this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tabPage5.Controls.Add(this.label5);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1039, 576);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Registar Detalle";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(467, 73);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(244, 36);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Registrar Detalle";
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tabPage6.Controls.Add(this.label6);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1039, 576);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Eliminar Detalle";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(474, 73);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(231, 36);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Eliminar Detalle";
+            this.button2.BackColor = System.Drawing.Color.DarkGray;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button2.Location = new System.Drawing.Point(521, 494);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(185, 40);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "Guardar";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Cargo
             // 
@@ -554,19 +556,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconcerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
             this.panelContenedor.ResumeLayout(false);
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage5.PerformLayout();
-            this.tabPage6.ResumeLayout(false);
-            this.tabPage6.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -583,19 +579,6 @@
         private System.Windows.Forms.PictureBox iconmaximizar;
         private System.Windows.Forms.PictureBox iconcerrar;
         private System.Windows.Forms.Button cerrarSesion;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TabPage tabPage6;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnCargos;
         private System.Windows.Forms.Button btnPlanillas;
         private System.Windows.Forms.Label lblNombre;
@@ -607,6 +590,19 @@
         private System.Windows.Forms.Button btnEmpleados;
         private System.Windows.Forms.Button btnUsuarios;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtCargo;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtPagoNocturno;
+        private System.Windows.Forms.TextBox txtPagoDiurno;
+        private System.Windows.Forms.TextBox txtSalario;
+        private System.Windows.Forms.TextBox txtPago;
     }
 }
 

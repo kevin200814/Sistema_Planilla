@@ -50,6 +50,19 @@
             this.iconcerrar = new System.Windows.Forms.PictureBox();
             this.btnMenu = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtCarnet = new System.Windows.Forms.TextBox();
+            this.txtBono = new System.Windows.Forms.TextBox();
+            this.txtPermiso = new System.Windows.Forms.TextBox();
+            this.txtHoras = new System.Windows.Forms.TextBox();
+            this.txtDias = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnlogoInicio)).BeginInit();
@@ -59,6 +72,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconmaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconcerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
+            this.panelContenedor.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // MenuVertical
@@ -359,11 +377,156 @@
             // panelContenedor
             // 
             this.panelContenedor.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelContenedor.Controls.Add(this.tabControl1);
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(250, 45);
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(1050, 605);
             this.panelContenedor.TabIndex = 2;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(1050, 605);
+            this.tabControl1.TabIndex = 0;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1042, 579);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Registro de detalles de empleados";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tabPage2.Controls.Add(this.button2);
+            this.tabPage2.Controls.Add(this.txtDias);
+            this.tabPage2.Controls.Add(this.txtHoras);
+            this.tabPage2.Controls.Add(this.txtPermiso);
+            this.tabPage2.Controls.Add(this.txtBono);
+            this.tabPage2.Controls.Add(this.txtCarnet);
+            this.tabPage2.Controls.Add(this.label2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1042, 579);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Registrar Detalle";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tabPage3.Controls.Add(this.label3);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1042, 579);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Eliminar Detalle";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(427, 68);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(492, 36);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Registro de Detalle de Empleados";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(514, 26);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(244, 36);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Registrar Detalle";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(524, 66);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(231, 36);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Eliminar Detalle";
+            // 
+            // txtCarnet
+            // 
+            this.txtCarnet.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCarnet.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtCarnet.Location = new System.Drawing.Point(470, 95);
+            this.txtCarnet.Name = "txtCarnet";
+            this.txtCarnet.Size = new System.Drawing.Size(330, 33);
+            this.txtCarnet.TabIndex = 1;
+            this.txtCarnet.Text = "Numero carnet";
+            this.txtCarnet.TextChanged += new System.EventHandler(this.txtCarnet_TextChanged);
+            // 
+            // txtBono
+            // 
+            this.txtBono.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBono.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtBono.Location = new System.Drawing.Point(470, 160);
+            this.txtBono.Name = "txtBono";
+            this.txtBono.Size = new System.Drawing.Size(330, 33);
+            this.txtBono.TabIndex = 2;
+            this.txtBono.Text = "Bono de empleado";
+            // 
+            // txtPermiso
+            // 
+            this.txtPermiso.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPermiso.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtPermiso.Location = new System.Drawing.Point(470, 229);
+            this.txtPermiso.Name = "txtPermiso";
+            this.txtPermiso.Size = new System.Drawing.Size(330, 33);
+            this.txtPermiso.TabIndex = 3;
+            this.txtPermiso.Text = "Permiso con goce de sueldo";
+            // 
+            // txtHoras
+            // 
+            this.txtHoras.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHoras.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtHoras.Location = new System.Drawing.Point(470, 301);
+            this.txtHoras.Name = "txtHoras";
+            this.txtHoras.Size = new System.Drawing.Size(330, 33);
+            this.txtHoras.TabIndex = 4;
+            this.txtHoras.Text = "Horas extras";
+            // 
+            // txtDias
+            // 
+            this.txtDias.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDias.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtDias.Location = new System.Drawing.Point(470, 373);
+            this.txtDias.Name = "txtDias";
+            this.txtDias.Size = new System.Drawing.Size(330, 33);
+            this.txtDias.TabIndex = 5;
+            this.txtDias.Text = "Dias extras";
+            this.txtDias.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.DarkGray;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(536, 463);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(202, 40);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "Guardar";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // DetalleEmpleado
             // 
@@ -388,6 +551,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconmaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconcerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
+            this.panelContenedor.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -415,6 +586,19 @@
         private System.Windows.Forms.Button btnUsuarios;
         private System.Windows.Forms.Button cerrarSesion;
         private System.Windows.Forms.PictureBox btnlogoInicio;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtDias;
+        private System.Windows.Forms.TextBox txtHoras;
+        private System.Windows.Forms.TextBox txtPermiso;
+        private System.Windows.Forms.TextBox txtBono;
+        private System.Windows.Forms.TextBox txtCarnet;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button2;
     }
 }
 

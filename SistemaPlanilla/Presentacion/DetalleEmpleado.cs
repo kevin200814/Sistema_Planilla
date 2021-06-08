@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using Logica;
 
 
 
@@ -154,5 +155,52 @@ namespace Presentacion
             DetalleEmpleado frmT = new DetalleEmpleado();
             frmT.Show();
         }
+
+        private void txtCarnet_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ControlDetalleEmpleado objDetalle = new ControlDetalleEmpleado();
+
+            try
+            {
+                objDetalle.Carnet = int.Parse(txtCarnet.Text);
+                objDetalle.Bono = float.Parse(txtBono.Text);
+                objDetalle.Permiso = float.Parse(txtPermiso.Text);
+                objDetalle.Horas_extras = int.Parse(txtHoras.Text);
+                objDetalle.Dias_extras = Convert.ToDateTime(txtDias.Text);
+
+                bool respuestaSQL = objDetalle.InsertarDetalle();
+                if (respuestaSQL == true)
+                {
+                    MessageBox.Show("Los datos del nuevo Detalle de empleado fueron insertados correctamente");
+                    txtCarnet.Text = "Nombre cargo";
+                    txtBono.Text = "Tipo Pago";
+                    txtPermiso.Text = "Salario de cargo";
+                    txtHoras.Text = "Pago diurno";
+                    txtDias.Text = "Pago nocturno";
+
+                }
+                else
+                {
+                    MessageBox.Show(objDetalle.Mensaje);
+                }
+                
+            }
+            catch(Exception Ex)
+            {
+                MessageBox.Show("Error!: " + Ex.Message + " " + objDetalle.Mensaje);
+            }
+        }
+
+
     }
 }
