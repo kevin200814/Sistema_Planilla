@@ -54,15 +54,59 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.idUsuario = new System.Windows.Forms.ComboBox();
+            this.txtSexo = new System.Windows.Forms.ComboBox();
+            this.txtEdad = new System.Windows.Forms.TextBox();
+            this.txtApellidos = new System.Windows.Forms.TextBox();
+            this.txtNombres = new System.Windows.Forms.TextBox();
+            this.btnGuardarEmpleado = new System.Windows.Forms.Button();
+            this.txtNcarnet = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.btnVerTodos = new System.Windows.Forms.Button();
+            this.btnConsultarUno = new System.Windows.Forms.Button();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.ListarHorarios = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.btnGuardarHorario = new System.Windows.Forms.Button();
+            this.txtFinal = new System.Windows.Forms.TextBox();
+            this.txtInicio = new System.Windows.Forms.TextBox();
+            this.txtTipoHorario = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.btnConsultarDatoHorario = new System.Windows.Forms.Button();
+            this.btnEliminarHorario = new System.Windows.Forms.Button();
+            this.txtIDHorario = new System.Windows.Forms.TextBox();
+            this.btnActualizarHorario = new System.Windows.Forms.Button();
+            this.txtFin2 = new System.Windows.Forms.TextBox();
+            this.txtInicio2 = new System.Windows.Forms.TextBox();
+            this.txtTipo_horario = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.idCargo = new System.Windows.Forms.ComboBox();
+            this.idHorario = new System.Windows.Forms.ComboBox();
+            this.idDetalle = new System.Windows.Forms.ComboBox();
+            this.btnVerTodosEmpleados = new System.Windows.Forms.Button();
+            this.btnConsultarUnEmpleado = new System.Windows.Forms.Button();
+            this.txtSeachEmpleado = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.EmpleadosList = new System.Windows.Forms.DataGridView();
+            this.idDetalle2 = new System.Windows.Forms.ComboBox();
+            this.idHorario2 = new System.Windows.Forms.ComboBox();
+            this.idCargo2 = new System.Windows.Forms.ComboBox();
+            this.idUsuario2 = new System.Windows.Forms.ComboBox();
+            this.idSexo2 = new System.Windows.Forms.ComboBox();
+            this.txtEdad2 = new System.Windows.Forms.TextBox();
+            this.txtApellidos2 = new System.Windows.Forms.TextBox();
+            this.txtNombres2 = new System.Windows.Forms.TextBox();
+            this.btnActualizarEmpleado = new System.Windows.Forms.Button();
+            this.txtNcarnet2 = new System.Windows.Forms.TextBox();
+            this.txtIdEmpleado = new System.Windows.Forms.TextBox();
+            this.btnConsultarEmpleado = new System.Windows.Forms.Button();
+            this.btnEliminarEmpleado = new System.Windows.Forms.Button();
             this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnlogoInicio)).BeginInit();
@@ -78,8 +122,10 @@
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ListarHorarios)).BeginInit();
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EmpleadosList)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuVertical
@@ -405,6 +451,11 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tabPage1.Controls.Add(this.btnVerTodosEmpleados);
+            this.tabPage1.Controls.Add(this.btnConsultarUnEmpleado);
+            this.tabPage1.Controls.Add(this.txtSeachEmpleado);
+            this.tabPage1.Controls.Add(this.label7);
+            this.tabPage1.Controls.Add(this.EmpleadosList);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
@@ -426,6 +477,16 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tabPage2.Controls.Add(this.idDetalle);
+            this.tabPage2.Controls.Add(this.idHorario);
+            this.tabPage2.Controls.Add(this.idCargo);
+            this.tabPage2.Controls.Add(this.idUsuario);
+            this.tabPage2.Controls.Add(this.txtSexo);
+            this.tabPage2.Controls.Add(this.txtEdad);
+            this.tabPage2.Controls.Add(this.txtApellidos);
+            this.tabPage2.Controls.Add(this.txtNombres);
+            this.tabPage2.Controls.Add(this.btnGuardarEmpleado);
+            this.tabPage2.Controls.Add(this.txtNcarnet);
             this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
@@ -433,6 +494,83 @@
             this.tabPage2.Size = new System.Drawing.Size(1042, 579);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Registrar Empleado";
+            // 
+            // idUsuario
+            // 
+            this.idUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idUsuario.ForeColor = System.Drawing.Color.DarkGray;
+            this.idUsuario.FormattingEnabled = true;
+            this.idUsuario.Location = new System.Drawing.Point(543, 118);
+            this.idUsuario.Name = "idUsuario";
+            this.idUsuario.Size = new System.Drawing.Size(241, 37);
+            this.idUsuario.TabIndex = 27;
+            this.idUsuario.Text = "Usuario";
+            // 
+            // txtSexo
+            // 
+            this.txtSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSexo.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtSexo.FormattingEnabled = true;
+            this.txtSexo.Items.AddRange(new object[] {
+            "H",
+            "M"});
+            this.txtSexo.Location = new System.Drawing.Point(276, 350);
+            this.txtSexo.Name = "txtSexo";
+            this.txtSexo.Size = new System.Drawing.Size(241, 37);
+            this.txtSexo.TabIndex = 26;
+            this.txtSexo.Text = "Sexo";
+            // 
+            // txtEdad
+            // 
+            this.txtEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEdad.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtEdad.Location = new System.Drawing.Point(276, 286);
+            this.txtEdad.Name = "txtEdad";
+            this.txtEdad.Size = new System.Drawing.Size(241, 35);
+            this.txtEdad.TabIndex = 20;
+            this.txtEdad.Text = "Edad";
+            // 
+            // txtApellidos
+            // 
+            this.txtApellidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellidos.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtApellidos.Location = new System.Drawing.Point(276, 231);
+            this.txtApellidos.Name = "txtApellidos";
+            this.txtApellidos.Size = new System.Drawing.Size(241, 35);
+            this.txtApellidos.TabIndex = 19;
+            this.txtApellidos.Text = "Apellidos";
+            // 
+            // txtNombres
+            // 
+            this.txtNombres.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombres.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtNombres.Location = new System.Drawing.Point(276, 171);
+            this.txtNombres.Name = "txtNombres";
+            this.txtNombres.Size = new System.Drawing.Size(241, 35);
+            this.txtNombres.TabIndex = 18;
+            this.txtNombres.Text = "Nombres";
+            // 
+            // btnGuardarEmpleado
+            // 
+            this.btnGuardarEmpleado.BackColor = System.Drawing.Color.DarkGray;
+            this.btnGuardarEmpleado.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardarEmpleado.Location = new System.Drawing.Point(434, 419);
+            this.btnGuardarEmpleado.Name = "btnGuardarEmpleado";
+            this.btnGuardarEmpleado.Size = new System.Drawing.Size(202, 40);
+            this.btnGuardarEmpleado.TabIndex = 17;
+            this.btnGuardarEmpleado.Text = "Guardar";
+            this.btnGuardarEmpleado.UseVisualStyleBackColor = false;
+            this.btnGuardarEmpleado.Click += new System.EventHandler(this.btnGuardarEmpleado_Click);
+            // 
+            // txtNcarnet
+            // 
+            this.txtNcarnet.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNcarnet.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtNcarnet.Location = new System.Drawing.Point(276, 120);
+            this.txtNcarnet.Name = "txtNcarnet";
+            this.txtNcarnet.Size = new System.Drawing.Size(241, 35);
+            this.txtNcarnet.TabIndex = 1;
+            this.txtNcarnet.Text = "Número de carnet";
             // 
             // label2
             // 
@@ -448,27 +586,45 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tabPage3.Controls.Add(this.btnEliminarEmpleado);
+            this.tabPage3.Controls.Add(this.btnConsultarEmpleado);
+            this.tabPage3.Controls.Add(this.txtIdEmpleado);
+            this.tabPage3.Controls.Add(this.idDetalle2);
+            this.tabPage3.Controls.Add(this.idHorario2);
+            this.tabPage3.Controls.Add(this.idCargo2);
+            this.tabPage3.Controls.Add(this.idUsuario2);
+            this.tabPage3.Controls.Add(this.idSexo2);
+            this.tabPage3.Controls.Add(this.txtEdad2);
+            this.tabPage3.Controls.Add(this.txtApellidos2);
+            this.tabPage3.Controls.Add(this.txtNombres2);
+            this.tabPage3.Controls.Add(this.btnActualizarEmpleado);
+            this.tabPage3.Controls.Add(this.txtNcarnet2);
             this.tabPage3.Controls.Add(this.label1);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(1042, 579);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Eliminar Empleado";
+            this.tabPage3.Text = "Actualizar/ Eliminar Empleado";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(369, 57);
+            this.label1.Location = new System.Drawing.Point(284, 57);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(334, 36);
+            this.label1.Size = new System.Drawing.Size(503, 36);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Eliminar de Empleados";
+            this.label1.Text = "Actualizar / Eliminar de Empleados";
             // 
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tabPage4.Controls.Add(this.btnVerTodos);
+            this.tabPage4.Controls.Add(this.btnConsultarUno);
+            this.tabPage4.Controls.Add(this.txtSearch);
+            this.tabPage4.Controls.Add(this.label18);
+            this.tabPage4.Controls.Add(this.ListarHorarios);
             this.tabPage4.Controls.Add(this.label4);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
@@ -476,6 +632,54 @@
             this.tabPage4.Size = new System.Drawing.Size(1042, 579);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Horarios";
+            // 
+            // btnVerTodos
+            // 
+            this.btnVerTodos.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.btnVerTodos.Location = new System.Drawing.Point(631, 174);
+            this.btnVerTodos.Name = "btnVerTodos";
+            this.btnVerTodos.Size = new System.Drawing.Size(148, 35);
+            this.btnVerTodos.TabIndex = 5;
+            this.btnVerTodos.Text = "Ver todos";
+            this.btnVerTodos.UseVisualStyleBackColor = true;
+            this.btnVerTodos.Click += new System.EventHandler(this.btnVerTodos_Click);
+            // 
+            // btnConsultarUno
+            // 
+            this.btnConsultarUno.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.btnConsultarUno.Location = new System.Drawing.Point(633, 128);
+            this.btnConsultarUno.Name = "btnConsultarUno";
+            this.btnConsultarUno.Size = new System.Drawing.Size(146, 35);
+            this.btnConsultarUno.TabIndex = 4;
+            this.btnConsultarUno.Text = "Consultar";
+            this.btnConsultarUno.UseVisualStyleBackColor = true;
+            this.btnConsultarUno.Click += new System.EventHandler(this.btnConsultarUno_Click);
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(320, 128);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(307, 35);
+            this.txtSearch.TabIndex = 3;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(186, 134);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(128, 29);
+            this.label18.TabIndex = 2;
+            this.label18.Text = "ID Horario:";
+            // 
+            // ListarHorarios
+            // 
+            this.ListarHorarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ListarHorarios.Location = new System.Drawing.Point(191, 180);
+            this.ListarHorarios.Name = "ListarHorarios";
+            this.ListarHorarios.Size = new System.Drawing.Size(436, 159);
+            this.ListarHorarios.TabIndex = 1;
             // 
             // label4
             // 
@@ -490,6 +694,10 @@
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tabPage5.Controls.Add(this.btnGuardarHorario);
+            this.tabPage5.Controls.Add(this.txtFinal);
+            this.tabPage5.Controls.Add(this.txtInicio);
+            this.tabPage5.Controls.Add(this.txtTipoHorario);
             this.tabPage5.Controls.Add(this.label5);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
@@ -497,6 +705,46 @@
             this.tabPage5.Size = new System.Drawing.Size(1042, 579);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Registrar Horarios";
+            // 
+            // btnGuardarHorario
+            // 
+            this.btnGuardarHorario.Location = new System.Drawing.Point(415, 355);
+            this.btnGuardarHorario.Name = "btnGuardarHorario";
+            this.btnGuardarHorario.Size = new System.Drawing.Size(165, 40);
+            this.btnGuardarHorario.TabIndex = 4;
+            this.btnGuardarHorario.Text = "Guardar";
+            this.btnGuardarHorario.UseVisualStyleBackColor = true;
+            this.btnGuardarHorario.Click += new System.EventHandler(this.btnGuardarHorario_Click);
+            // 
+            // txtFinal
+            // 
+            this.txtFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFinal.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtFinal.Location = new System.Drawing.Point(415, 281);
+            this.txtFinal.Name = "txtFinal";
+            this.txtFinal.Size = new System.Drawing.Size(249, 35);
+            this.txtFinal.TabIndex = 3;
+            this.txtFinal.Text = "Hora de final";
+            // 
+            // txtInicio
+            // 
+            this.txtInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInicio.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtInicio.Location = new System.Drawing.Point(415, 204);
+            this.txtInicio.Name = "txtInicio";
+            this.txtInicio.Size = new System.Drawing.Size(249, 35);
+            this.txtInicio.TabIndex = 2;
+            this.txtInicio.Text = "Hora de inicio";
+            // 
+            // txtTipoHorario
+            // 
+            this.txtTipoHorario.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTipoHorario.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtTipoHorario.Location = new System.Drawing.Point(415, 134);
+            this.txtTipoHorario.Name = "txtTipoHorario";
+            this.txtTipoHorario.Size = new System.Drawing.Size(249, 35);
+            this.txtTipoHorario.TabIndex = 1;
+            this.txtTipoHorario.Text = "Tipo de horario";
             // 
             // label5
             // 
@@ -511,24 +759,328 @@
             // tabPage6
             // 
             this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tabPage6.Controls.Add(this.btnConsultarDatoHorario);
+            this.tabPage6.Controls.Add(this.btnEliminarHorario);
+            this.tabPage6.Controls.Add(this.txtIDHorario);
+            this.tabPage6.Controls.Add(this.btnActualizarHorario);
+            this.tabPage6.Controls.Add(this.txtFin2);
+            this.tabPage6.Controls.Add(this.txtInicio2);
+            this.tabPage6.Controls.Add(this.txtTipo_horario);
             this.tabPage6.Controls.Add(this.label6);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage6.Size = new System.Drawing.Size(1042, 579);
             this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Eliminar Horario";
+            this.tabPage6.Text = "Actualizar/ Eliminar Horario";
             this.tabPage6.Click += new System.EventHandler(this.tabPage6_Click);
+            // 
+            // btnConsultarDatoHorario
+            // 
+            this.btnConsultarDatoHorario.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.btnConsultarDatoHorario.Location = new System.Drawing.Point(547, 129);
+            this.btnConsultarDatoHorario.Name = "btnConsultarDatoHorario";
+            this.btnConsultarDatoHorario.Size = new System.Drawing.Size(165, 40);
+            this.btnConsultarDatoHorario.TabIndex = 13;
+            this.btnConsultarDatoHorario.Text = "Consultar";
+            this.btnConsultarDatoHorario.UseVisualStyleBackColor = true;
+            this.btnConsultarDatoHorario.Click += new System.EventHandler(this.btnConsultarDatoHorario_Click);
+            // 
+            // btnEliminarHorario
+            // 
+            this.btnEliminarHorario.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.btnEliminarHorario.Location = new System.Drawing.Point(547, 269);
+            this.btnEliminarHorario.Name = "btnEliminarHorario";
+            this.btnEliminarHorario.Size = new System.Drawing.Size(165, 40);
+            this.btnEliminarHorario.TabIndex = 12;
+            this.btnEliminarHorario.Text = "Eliminar";
+            this.btnEliminarHorario.UseVisualStyleBackColor = true;
+            this.btnEliminarHorario.Click += new System.EventHandler(this.btnEliminarHorario_Click);
+            // 
+            // txtIDHorario
+            // 
+            this.txtIDHorario.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIDHorario.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtIDHorario.Location = new System.Drawing.Point(281, 134);
+            this.txtIDHorario.Name = "txtIDHorario";
+            this.txtIDHorario.Size = new System.Drawing.Size(249, 35);
+            this.txtIDHorario.TabIndex = 10;
+            this.txtIDHorario.Text = "ID Horario";
+            // 
+            // btnActualizarHorario
+            // 
+            this.btnActualizarHorario.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.btnActualizarHorario.Location = new System.Drawing.Point(547, 204);
+            this.btnActualizarHorario.Name = "btnActualizarHorario";
+            this.btnActualizarHorario.Size = new System.Drawing.Size(165, 40);
+            this.btnActualizarHorario.TabIndex = 8;
+            this.btnActualizarHorario.Text = "Actualizar ";
+            this.btnActualizarHorario.UseVisualStyleBackColor = true;
+            this.btnActualizarHorario.Click += new System.EventHandler(this.btnActualizarHorario_Click);
+            // 
+            // txtFin2
+            // 
+            this.txtFin2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFin2.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtFin2.Location = new System.Drawing.Point(281, 351);
+            this.txtFin2.Name = "txtFin2";
+            this.txtFin2.Size = new System.Drawing.Size(249, 35);
+            this.txtFin2.TabIndex = 7;
+            this.txtFin2.Text = "Hora de final";
+            // 
+            // txtInicio2
+            // 
+            this.txtInicio2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInicio2.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtInicio2.Location = new System.Drawing.Point(281, 274);
+            this.txtInicio2.Name = "txtInicio2";
+            this.txtInicio2.Size = new System.Drawing.Size(249, 35);
+            this.txtInicio2.TabIndex = 6;
+            this.txtInicio2.Text = "Hora de inicio";
+            // 
+            // txtTipo_horario
+            // 
+            this.txtTipo_horario.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTipo_horario.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtTipo_horario.Location = new System.Drawing.Point(281, 204);
+            this.txtTipo_horario.Name = "txtTipo_horario";
+            this.txtTipo_horario.Size = new System.Drawing.Size(249, 35);
+            this.txtTipo_horario.TabIndex = 5;
+            this.txtTipo_horario.Text = "Tipo de horario";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(459, 59);
+            this.label6.Location = new System.Drawing.Point(332, 65);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(233, 36);
+            this.label6.Size = new System.Drawing.Size(394, 36);
             this.label6.TabIndex = 0;
-            this.label6.Text = "Eliminar Horario";
+            this.label6.Text = "Actualizar/ Eliminar Horario";
+            // 
+            // idCargo
+            // 
+            this.idCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idCargo.ForeColor = System.Drawing.Color.DarkGray;
+            this.idCargo.FormattingEnabled = true;
+            this.idCargo.Location = new System.Drawing.Point(543, 169);
+            this.idCargo.Name = "idCargo";
+            this.idCargo.Size = new System.Drawing.Size(241, 37);
+            this.idCargo.TabIndex = 28;
+            this.idCargo.Text = "Cargo";
+            // 
+            // idHorario
+            // 
+            this.idHorario.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idHorario.ForeColor = System.Drawing.Color.DarkGray;
+            this.idHorario.FormattingEnabled = true;
+            this.idHorario.Location = new System.Drawing.Point(543, 231);
+            this.idHorario.Name = "idHorario";
+            this.idHorario.Size = new System.Drawing.Size(241, 37);
+            this.idHorario.TabIndex = 29;
+            this.idHorario.Text = "Horario";
+            // 
+            // idDetalle
+            // 
+            this.idDetalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idDetalle.ForeColor = System.Drawing.Color.DarkGray;
+            this.idDetalle.FormattingEnabled = true;
+            this.idDetalle.Location = new System.Drawing.Point(543, 286);
+            this.idDetalle.Name = "idDetalle";
+            this.idDetalle.Size = new System.Drawing.Size(241, 37);
+            this.idDetalle.TabIndex = 30;
+            this.idDetalle.Text = "Detalle Empleado";
+            // 
+            // btnVerTodosEmpleados
+            // 
+            this.btnVerTodosEmpleados.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.btnVerTodosEmpleados.Location = new System.Drawing.Point(740, 114);
+            this.btnVerTodosEmpleados.Name = "btnVerTodosEmpleados";
+            this.btnVerTodosEmpleados.Size = new System.Drawing.Size(148, 35);
+            this.btnVerTodosEmpleados.TabIndex = 10;
+            this.btnVerTodosEmpleados.Text = "Ver todos";
+            this.btnVerTodosEmpleados.UseVisualStyleBackColor = true;
+            this.btnVerTodosEmpleados.Click += new System.EventHandler(this.btnVerTodosEmpleados_Click);
+            // 
+            // btnConsultarUnEmpleado
+            // 
+            this.btnConsultarUnEmpleado.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.btnConsultarUnEmpleado.Location = new System.Drawing.Point(588, 114);
+            this.btnConsultarUnEmpleado.Name = "btnConsultarUnEmpleado";
+            this.btnConsultarUnEmpleado.Size = new System.Drawing.Size(146, 35);
+            this.btnConsultarUnEmpleado.TabIndex = 9;
+            this.btnConsultarUnEmpleado.Text = "Consultar";
+            this.btnConsultarUnEmpleado.UseVisualStyleBackColor = true;
+            this.btnConsultarUnEmpleado.Click += new System.EventHandler(this.btnConsultarUnEmpleado_Click);
+            // 
+            // txtSeachEmpleado
+            // 
+            this.txtSeachEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSeachEmpleado.Location = new System.Drawing.Point(275, 114);
+            this.txtSeachEmpleado.Name = "txtSeachEmpleado";
+            this.txtSeachEmpleado.Size = new System.Drawing.Size(307, 35);
+            this.txtSeachEmpleado.TabIndex = 8;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(110, 114);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(159, 29);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "ID Empleado:";
+            // 
+            // EmpleadosList
+            // 
+            this.EmpleadosList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.EmpleadosList.Location = new System.Drawing.Point(115, 162);
+            this.EmpleadosList.Name = "EmpleadosList";
+            this.EmpleadosList.Size = new System.Drawing.Size(773, 251);
+            this.EmpleadosList.TabIndex = 6;
+            // 
+            // idDetalle2
+            // 
+            this.idDetalle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idDetalle2.ForeColor = System.Drawing.Color.DarkGray;
+            this.idDetalle2.FormattingEnabled = true;
+            this.idDetalle2.Location = new System.Drawing.Point(546, 355);
+            this.idDetalle2.Name = "idDetalle2";
+            this.idDetalle2.Size = new System.Drawing.Size(241, 37);
+            this.idDetalle2.TabIndex = 40;
+            this.idDetalle2.Text = "Detalle Empleado";
+            // 
+            // idHorario2
+            // 
+            this.idHorario2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idHorario2.ForeColor = System.Drawing.Color.DarkGray;
+            this.idHorario2.FormattingEnabled = true;
+            this.idHorario2.Location = new System.Drawing.Point(546, 300);
+            this.idHorario2.Name = "idHorario2";
+            this.idHorario2.Size = new System.Drawing.Size(241, 37);
+            this.idHorario2.TabIndex = 39;
+            this.idHorario2.Text = "Horario";
+            // 
+            // idCargo2
+            // 
+            this.idCargo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idCargo2.ForeColor = System.Drawing.Color.DarkGray;
+            this.idCargo2.FormattingEnabled = true;
+            this.idCargo2.Location = new System.Drawing.Point(546, 238);
+            this.idCargo2.Name = "idCargo2";
+            this.idCargo2.Size = new System.Drawing.Size(241, 37);
+            this.idCargo2.TabIndex = 38;
+            this.idCargo2.Text = "Cargo";
+            // 
+            // idUsuario2
+            // 
+            this.idUsuario2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idUsuario2.ForeColor = System.Drawing.Color.DarkGray;
+            this.idUsuario2.FormattingEnabled = true;
+            this.idUsuario2.Location = new System.Drawing.Point(546, 187);
+            this.idUsuario2.Name = "idUsuario2";
+            this.idUsuario2.Size = new System.Drawing.Size(241, 37);
+            this.idUsuario2.TabIndex = 37;
+            this.idUsuario2.Text = "Usuario";
+            // 
+            // idSexo2
+            // 
+            this.idSexo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idSexo2.ForeColor = System.Drawing.Color.DarkGray;
+            this.idSexo2.FormattingEnabled = true;
+            this.idSexo2.Items.AddRange(new object[] {
+            "H",
+            "M"});
+            this.idSexo2.Location = new System.Drawing.Point(279, 419);
+            this.idSexo2.Name = "idSexo2";
+            this.idSexo2.Size = new System.Drawing.Size(241, 37);
+            this.idSexo2.TabIndex = 36;
+            this.idSexo2.Text = "Sexo";
+            // 
+            // txtEdad2
+            // 
+            this.txtEdad2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEdad2.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtEdad2.Location = new System.Drawing.Point(279, 355);
+            this.txtEdad2.Name = "txtEdad2";
+            this.txtEdad2.Size = new System.Drawing.Size(241, 35);
+            this.txtEdad2.TabIndex = 35;
+            this.txtEdad2.Text = "Edad";
+            // 
+            // txtApellidos2
+            // 
+            this.txtApellidos2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellidos2.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtApellidos2.Location = new System.Drawing.Point(279, 300);
+            this.txtApellidos2.Name = "txtApellidos2";
+            this.txtApellidos2.Size = new System.Drawing.Size(241, 35);
+            this.txtApellidos2.TabIndex = 34;
+            this.txtApellidos2.Text = "Apellidos";
+            // 
+            // txtNombres2
+            // 
+            this.txtNombres2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombres2.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtNombres2.Location = new System.Drawing.Point(279, 240);
+            this.txtNombres2.Name = "txtNombres2";
+            this.txtNombres2.Size = new System.Drawing.Size(241, 35);
+            this.txtNombres2.TabIndex = 33;
+            this.txtNombres2.Text = "Nombres";
+            // 
+            // btnActualizarEmpleado
+            // 
+            this.btnActualizarEmpleado.BackColor = System.Drawing.Color.DarkGray;
+            this.btnActualizarEmpleado.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizarEmpleado.Location = new System.Drawing.Point(279, 484);
+            this.btnActualizarEmpleado.Name = "btnActualizarEmpleado";
+            this.btnActualizarEmpleado.Size = new System.Drawing.Size(202, 40);
+            this.btnActualizarEmpleado.TabIndex = 32;
+            this.btnActualizarEmpleado.Text = "Actualizar";
+            this.btnActualizarEmpleado.UseVisualStyleBackColor = false;
+            this.btnActualizarEmpleado.Click += new System.EventHandler(this.btnActualizarEmpleado_Click);
+            // 
+            // txtNcarnet2
+            // 
+            this.txtNcarnet2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNcarnet2.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtNcarnet2.Location = new System.Drawing.Point(279, 189);
+            this.txtNcarnet2.Name = "txtNcarnet2";
+            this.txtNcarnet2.Size = new System.Drawing.Size(241, 35);
+            this.txtNcarnet2.TabIndex = 31;
+            this.txtNcarnet2.Text = "Número de carnet";
+            // 
+            // txtIdEmpleado
+            // 
+            this.txtIdEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdEmpleado.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtIdEmpleado.Location = new System.Drawing.Point(279, 134);
+            this.txtIdEmpleado.Name = "txtIdEmpleado";
+            this.txtIdEmpleado.Size = new System.Drawing.Size(241, 35);
+            this.txtIdEmpleado.TabIndex = 41;
+            this.txtIdEmpleado.Text = "ID Empleado";
+            // 
+            // btnConsultarEmpleado
+            // 
+            this.btnConsultarEmpleado.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.btnConsultarEmpleado.Location = new System.Drawing.Point(546, 134);
+            this.btnConsultarEmpleado.Name = "btnConsultarEmpleado";
+            this.btnConsultarEmpleado.Size = new System.Drawing.Size(126, 35);
+            this.btnConsultarEmpleado.TabIndex = 42;
+            this.btnConsultarEmpleado.Text = "Buscar";
+            this.btnConsultarEmpleado.UseVisualStyleBackColor = true;
+            this.btnConsultarEmpleado.Click += new System.EventHandler(this.btnConsultarEmpleado_Click);
+            // 
+            // btnEliminarEmpleado
+            // 
+            this.btnEliminarEmpleado.BackColor = System.Drawing.Color.DarkGray;
+            this.btnEliminarEmpleado.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarEmpleado.Location = new System.Drawing.Point(487, 484);
+            this.btnEliminarEmpleado.Name = "btnEliminarEmpleado";
+            this.btnEliminarEmpleado.Size = new System.Drawing.Size(202, 40);
+            this.btnEliminarEmpleado.TabIndex = 43;
+            this.btnEliminarEmpleado.Text = "Eliminar";
+            this.btnEliminarEmpleado.UseVisualStyleBackColor = false;
+            this.btnEliminarEmpleado.Click += new System.EventHandler(this.btnEliminarEmpleado_Click);
             // 
             // Empleados
             // 
@@ -563,10 +1115,12 @@
             this.tabPage3.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ListarHorarios)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EmpleadosList)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -607,6 +1161,50 @@
         private System.Windows.Forms.Button btnUsuarios;
         private System.Windows.Forms.Button cerrarSesion;
         private System.Windows.Forms.PictureBox btnlogoInicio;
+        private System.Windows.Forms.Button btnGuardarHorario;
+        private System.Windows.Forms.TextBox txtFinal;
+        private System.Windows.Forms.TextBox txtInicio;
+        private System.Windows.Forms.TextBox txtTipoHorario;
+        private System.Windows.Forms.Button btnVerTodos;
+        private System.Windows.Forms.Button btnConsultarUno;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.DataGridView ListarHorarios;
+        private System.Windows.Forms.Button btnConsultarDatoHorario;
+        private System.Windows.Forms.Button btnEliminarHorario;
+        private System.Windows.Forms.TextBox txtIDHorario;
+        private System.Windows.Forms.Button btnActualizarHorario;
+        private System.Windows.Forms.TextBox txtFin2;
+        private System.Windows.Forms.TextBox txtInicio2;
+        private System.Windows.Forms.TextBox txtTipo_horario;
+        private System.Windows.Forms.TextBox txtNcarnet;
+        private System.Windows.Forms.Button btnGuardarEmpleado;
+        private System.Windows.Forms.TextBox txtEdad;
+        private System.Windows.Forms.TextBox txtApellidos;
+        private System.Windows.Forms.TextBox txtNombres;
+        private System.Windows.Forms.ComboBox txtSexo;
+        private System.Windows.Forms.ComboBox idUsuario;
+        private System.Windows.Forms.ComboBox idCargo;
+        private System.Windows.Forms.ComboBox idHorario;
+        private System.Windows.Forms.ComboBox idDetalle;
+        private System.Windows.Forms.Button btnVerTodosEmpleados;
+        private System.Windows.Forms.Button btnConsultarUnEmpleado;
+        private System.Windows.Forms.TextBox txtSeachEmpleado;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DataGridView EmpleadosList;
+        private System.Windows.Forms.ComboBox idDetalle2;
+        private System.Windows.Forms.ComboBox idHorario2;
+        private System.Windows.Forms.ComboBox idCargo2;
+        private System.Windows.Forms.ComboBox idUsuario2;
+        private System.Windows.Forms.ComboBox idSexo2;
+        private System.Windows.Forms.TextBox txtEdad2;
+        private System.Windows.Forms.TextBox txtApellidos2;
+        private System.Windows.Forms.TextBox txtNombres2;
+        private System.Windows.Forms.Button btnActualizarEmpleado;
+        private System.Windows.Forms.TextBox txtNcarnet2;
+        private System.Windows.Forms.Button btnConsultarEmpleado;
+        private System.Windows.Forms.TextBox txtIdEmpleado;
+        private System.Windows.Forms.Button btnEliminarEmpleado;
     }
 }
 
