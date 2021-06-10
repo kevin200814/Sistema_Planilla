@@ -45,6 +45,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BD_PLANILLADataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="BD_PLANILLADataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_PLANILLADataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ControlCargo.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="ControlDetalleEmpleado.cs" />
@@ -70,6 +75,17 @@
     </None>
     <None Include="BD_PLANILLADataSet.xss">
       <DependentUpon>BD_PLANILLADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BD_PLANILLADataSet1.xsc">
+      <DependentUpon>BD_PLANILLADataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BD_PLANILLADataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_PLANILLADataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD_PLANILLADataSet1.xss">
+      <DependentUpon>BD_PLANILLADataSet1.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

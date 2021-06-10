@@ -87,3 +87,25 @@ C:\Users\kevin\Documents\Visual Studio 2015\repos\Sistema_Planilla\SistemaPlanil
 C:\Users\kevin\Documents\Visual Studio 2015\repos\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
 C:\Users\kevin\Documents\Visual Studio 2015\repos\Sistema_Planilla\SistemaPlanilla\Presentacion\bin\Debug\Logica.dll.config
 C:\Users\kevin\Documents\Visual Studio 2015\repos\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
+C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Presentacion\bin\Debug\Logica.dll
+C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Presentacion\bin\Debug\Logica.pdb
+C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Presentacion\bin\Debug\Logica.dll.config
+C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.csprojAssemblyReference.cache
+C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Login.resources
+C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.MenuEmpleado.resources
+C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.MenuAdmin.resources
+C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Empleados.resources
+C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Cargo.resources
+C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.DetalleEmpleado.resources
+C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Horario.resources
+C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Roles.resources
+C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Usuarios.resources
+C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
+C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
+C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.pdb
