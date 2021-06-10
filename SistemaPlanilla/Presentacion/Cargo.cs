@@ -11,7 +11,6 @@ using System.Runtime.InteropServices;
 using Logica;
 
 
-
 namespace Presentacion
 {
     public partial class Cargo : Form
