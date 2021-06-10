@@ -109,3 +109,25 @@ C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion
 C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
 C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.exe
 C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\sussy\OneDrive\Documentos\GitHub\clones\Sistema_Planilla\SistemaPlanilla\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\sussy\OneDrive\Documentos\GitHub\clones\Sistema_Planilla\SistemaPlanilla\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\sussy\OneDrive\Documentos\GitHub\clones\Sistema_Planilla\SistemaPlanilla\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\sussy\OneDrive\Documentos\GitHub\clones\Sistema_Planilla\SistemaPlanilla\Presentacion\bin\Debug\Logica.dll
+C:\Users\sussy\OneDrive\Documentos\GitHub\clones\Sistema_Planilla\SistemaPlanilla\Presentacion\bin\Debug\Logica.pdb
+C:\Users\sussy\OneDrive\Documentos\GitHub\clones\Sistema_Planilla\SistemaPlanilla\Presentacion\bin\Debug\Logica.dll.config
+C:\Users\sussy\OneDrive\Documentos\GitHub\clones\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.csprojAssemblyReference.cache
+C:\Users\sussy\OneDrive\Documentos\GitHub\clones\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Login.resources
+C:\Users\sussy\OneDrive\Documentos\GitHub\clones\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.MenuEmpleado.resources
+C:\Users\sussy\OneDrive\Documentos\GitHub\clones\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.MenuAdmin.resources
+C:\Users\sussy\OneDrive\Documentos\GitHub\clones\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Empleados.resources
+C:\Users\sussy\OneDrive\Documentos\GitHub\clones\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Cargo.resources
+C:\Users\sussy\OneDrive\Documentos\GitHub\clones\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.DetalleEmpleado.resources
+C:\Users\sussy\OneDrive\Documentos\GitHub\clones\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Horario.resources
+C:\Users\sussy\OneDrive\Documentos\GitHub\clones\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Roles.resources
+C:\Users\sussy\OneDrive\Documentos\GitHub\clones\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Usuarios.resources
+C:\Users\sussy\OneDrive\Documentos\GitHub\clones\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+C:\Users\sussy\OneDrive\Documentos\GitHub\clones\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
+C:\Users\sussy\OneDrive\Documentos\GitHub\clones\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\sussy\OneDrive\Documentos\GitHub\clones\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
+C:\Users\sussy\OneDrive\Documentos\GitHub\clones\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\sussy\OneDrive\Documentos\GitHub\clones\Sistema_Planilla\SistemaPlanilla\Presentacion\obj\Debug\Presentacion.pdb

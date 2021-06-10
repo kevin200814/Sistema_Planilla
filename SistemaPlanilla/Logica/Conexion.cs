@@ -21,7 +21,7 @@ namespace Logica
         public Conexion()
         {
             //Cadena de Conexion Para SQL Server:Data Source=.\\SQL2019;Initial Catalog=BD_PLANILLA;Integrated Security=True
-            String cadenaconexion = "Data Source=.;Initial Catalog=BD_PLANILLA;Integrated Security=True";
+            String cadenaconexion = "Data Source=LAPTOP-PT9RLI7S;Initial Catalog=BD_PLANILLA;Integrated Security=True";
             conn = new SqlConnection(cadenaconexion);
         }
 

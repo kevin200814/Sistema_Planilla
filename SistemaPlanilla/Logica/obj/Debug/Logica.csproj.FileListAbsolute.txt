@@ -28,3 +28,10 @@ C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion
 C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
 C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Logica\obj\Debug\Logica.dll
 C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Logica\obj\Debug\Logica.pdb
+C:\Users\sussy\OneDrive\Documentos\GitHub\clones\Sistema_Planilla\SistemaPlanilla\Logica\bin\Debug\Logica.dll.config
+C:\Users\sussy\OneDrive\Documentos\GitHub\clones\Sistema_Planilla\SistemaPlanilla\Logica\bin\Debug\Logica.dll
+C:\Users\sussy\OneDrive\Documentos\GitHub\clones\Sistema_Planilla\SistemaPlanilla\Logica\bin\Debug\Logica.pdb
+C:\Users\sussy\OneDrive\Documentos\GitHub\clones\Sistema_Planilla\SistemaPlanilla\Logica\obj\Debug\Logica.csprojAssemblyReference.cache
+C:\Users\sussy\OneDrive\Documentos\GitHub\clones\Sistema_Planilla\SistemaPlanilla\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\Users\sussy\OneDrive\Documentos\GitHub\clones\Sistema_Planilla\SistemaPlanilla\Logica\obj\Debug\Logica.dll
+C:\Users\sussy\OneDrive\Documentos\GitHub\clones\Sistema_Planilla\SistemaPlanilla\Logica\obj\Debug\Logica.pdb
