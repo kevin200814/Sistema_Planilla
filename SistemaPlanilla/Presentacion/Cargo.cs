@@ -22,14 +22,14 @@ namespace Presentacion
         }
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            if (MenuVertical.Width == 250 )
+            if (MenuVertical.Width == 250)
             {
                 MenuVertical.Width = 70;
-               
+
             }
             else
                 MenuVertical.Width = 250;
-               
+
         }
 
         private void iconcerrar_Click(object sender, EventArgs e)
@@ -64,7 +64,7 @@ namespace Presentacion
         private void BarraTitulo_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
-            SendMessage(this.Handle,0x112,0xf012,0);
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
         private void AbrirFormEnPanel(object Formhijo)
@@ -94,22 +94,22 @@ namespace Presentacion
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            btnlogoInicio_Click(null,e);
+            btnlogoInicio_Click(null, e);
         }
 
         private void cerrarSesion_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Estas seguro?","Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            if (MessageBox.Show("Estas seguro?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 this.Close();
             }
         }
 
         public void CargarDataUsuario() {
-           /* lblNombre.Text = LoginUsuarioCache.nombre + ", "+ LoginUsuarioCache.apellido;
-            lblCargo.Text = LoginUsuarioCache.cargo;
-            lblcorreo.Text = LoginUsuarioCache.email*/
-            
+            /* lblNombre.Text = LoginUsuarioCache.nombre + ", "+ LoginUsuarioCache.apellido;
+             lblCargo.Text = LoginUsuarioCache.cargo;
+             lblcorreo.Text = LoginUsuarioCache.email*/
+
 
         }
 
@@ -202,7 +202,7 @@ namespace Presentacion
                     txtSalario.Text = "Salario de cargo";
                     txtPagoDiurno.Text = "Pago diurno";
                     txtPagoNocturno.Text = "Pago nocturno";
-                   
+
                 }
                 else
                 {
@@ -253,22 +253,137 @@ namespace Presentacion
             ControlCargo obj = new ControlCargo();
             try
             {
-                DataSet Dato = obj.ConsultarTodosCargo();
-                int numregistros = Dato.Tables["TablaConsultada"].Rows.Count;
+                DataSet DatosCargo = obj.ConsultarTodosCargo();
+                int numregistros = DatosCargo.Tables["TablaConsultada"].Rows.Count;
                 if (numregistros == 0)
                 {
                     MessageBox.Show("No hay datos en la tabla");
                 }
                 else
                 {
-                    DataSet Datos = obj.ConsultarTodosCargo();
-                    DataCargo.DataSource = Datos.Tables["TablaConsultada"].DefaultView;
+                    DataSet DatosC = obj.ConsultarTodosCargo();
+                    DataCargo.DataSource = DatosC.Tables["TablaConsultada"].DefaultView;
                 }
             }
             catch (Exception Ex)
             {
                 MessageBox.Show("Fatality!: " + Ex.Message + " " + obj.Mensaje);
             }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            ControlCargo obj = new ControlCargo();
+            try
+            {
+                DataSet DatosCargo = obj.ConsultarCargo(int.Parse(txtId.Text));
+                int numregistros = DatosCargo.Tables["TablaConsultada"].Rows.Count;
+                if (numregistros == 0)
+                {
+                    MessageBox.Show("No existen datos");
+                }
+                else
+                {
+                    txtId.Text = DatosCargo.Tables["TablaConsultada"].Rows[0]["ID_CARGO"].ToString();
+                    txtnombreCargo.Text = DatosCargo.Tables["TablaConsultada"].Rows[0]["NOMBRE_CARGO"].ToString();
+                    txtTipoPago.Text = DatosCargo.Tables["TablaConsultada"].Rows[0]["TIPO_PAGO"].ToString();
+                    txtSalarioCargo.Text = DatosCargo.Tables["TablaConsultada"].Rows[0]["SALARIO_CARGO"].ToString();
+                    txtPagoDi.Text = DatosCargo.Tables["TablaConsultada"].Rows[0]["PAGO_DIURNO"].ToString();
+                    txtPagoNo.Text = DatosCargo.Tables["TablaConsultada"].Rows[0]["PAGO_NOCTURNO"].ToString();
+
+
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show("Fatality!: " + Ex.Message + " " + obj.Mensaje);
+            }
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            ControlCargo obj = new ControlCargo();
+            try
+            {
+                obj.id_cargo = int.Parse(txtId.Text);
+                obj.Nombre = txtnombreCargo.Text;
+                obj.Tipo_Pago = txtTipoPago.Text;
+                obj.Salario = float.Parse(txtSalarioCargo.Text);
+                obj.Pagod = float.Parse(txtPagoDi.Text);
+                obj.PagoN = float.Parse(txtPagoNo.Text);
+                
+
+                bool respuestaSQL = obj.ActualizarCargo();
+                if (respuestaSQL == true)
+                {
+                    MessageBox.Show("Los datos del nuevo registro fueron Actualizados correctamente");
+                    txtId.Text = "Id Cargo";
+                    txtnombreCargo.Text ="NombreCargo";
+                    txtTipoPago.Text = "Tipo Pago";
+                    txtSalarioCargo.Text = "Salario de Cargo";
+                    txtPagoDi.Text = "Pago Diurno";
+                    txtPagoNo.Text = "Pago Nocturno";
+
+                }
+                else
+                {
+                    MessageBox.Show(obj.Mensaje);
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show("Error!: " + Ex.Message + " " + obj.Mensaje);
+            }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            ControlCargo obj = new ControlCargo();
+            try
+            {
+                if (string.IsNullOrEmpty(txtId.Text ?? string.Empty))
+                {
+                    MessageBox.Show("Por favor ingrese un ID");
+                }
+                else
+                {
+                    int idCargo = int.Parse(txtId.Text);
+                    bool respuestaSQL = obj.EliminarCargo(idCargo);
+                    if (respuestaSQL == true)
+                    {
+                        MessageBox.Show("Los datos fueron eliminados correctamente");
+                        txtId.Text = "Id Cargo";
+                        txtnombreCargo.Text = "NombreCargo";
+                        txtTipoPago.Text = "Tipo Pago";
+                        txtSalarioCargo.Text = "Salario de Cargo";
+                        txtPagoDi.Text = "Pago Diurno";
+                        txtPagoNo.Text = "Pago Nocturno";
+                    }
+                    else
+                    {
+                        MessageBox.Show(obj.Mensaje);
+                    }
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show("Error!: " + Ex.Message + " " + obj.Mensaje);
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

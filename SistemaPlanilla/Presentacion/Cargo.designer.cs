@@ -52,6 +52,10 @@
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnVerCargos = new System.Windows.Forms.Button();
+            this.btnConsultarCargo = new System.Windows.Forms.Button();
+            this.txtIdCargo = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.DataCargo = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -64,10 +68,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtIdCargo = new System.Windows.Forms.TextBox();
-            this.btnConsultarCargo = new System.Windows.Forms.Button();
-            this.btnVerCargos = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.txtPagoNo = new System.Windows.Forms.TextBox();
+            this.txtPagoDi = new System.Windows.Forms.TextBox();
+            this.txtSalarioCargo = new System.Windows.Forms.TextBox();
+            this.txtTipoPago = new System.Windows.Forms.TextBox();
+            this.txtnombreCargo = new System.Windows.Forms.TextBox();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnlogoInicio)).BeginInit();
@@ -420,23 +429,65 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Registro de cargo";
             // 
+            // btnVerCargos
+            // 
+            this.btnVerCargos.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerCargos.Location = new System.Drawing.Point(711, 92);
+            this.btnVerCargos.Name = "btnVerCargos";
+            this.btnVerCargos.Size = new System.Drawing.Size(117, 33);
+            this.btnVerCargos.TabIndex = 5;
+            this.btnVerCargos.Text = "Ver Todos";
+            this.btnVerCargos.UseVisualStyleBackColor = true;
+            this.btnVerCargos.Click += new System.EventHandler(this.btnVerCargos_Click);
+            // 
+            // btnConsultarCargo
+            // 
+            this.btnConsultarCargo.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultarCargo.Location = new System.Drawing.Point(555, 92);
+            this.btnConsultarCargo.Name = "btnConsultarCargo";
+            this.btnConsultarCargo.Size = new System.Drawing.Size(139, 33);
+            this.btnConsultarCargo.TabIndex = 4;
+            this.btnConsultarCargo.Text = "Consultar";
+            this.btnConsultarCargo.UseVisualStyleBackColor = true;
+            this.btnConsultarCargo.Click += new System.EventHandler(this.button3_Click_1);
+            // 
+            // txtIdCargo
+            // 
+            this.txtIdCargo.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdCargo.Location = new System.Drawing.Point(310, 92);
+            this.txtIdCargo.Name = "txtIdCargo";
+            this.txtIdCargo.Size = new System.Drawing.Size(205, 31);
+            this.txtIdCargo.TabIndex = 3;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(180, 92);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(124, 28);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "ID Cargo:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
             // DataCargo
             // 
             this.DataCargo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataCargo.Location = new System.Drawing.Point(119, 143);
+            this.DataCargo.Location = new System.Drawing.Point(194, 143);
             this.DataCargo.Name = "DataCargo";
-            this.DataCargo.Size = new System.Drawing.Size(861, 313);
+            this.DataCargo.Size = new System.Drawing.Size(634, 313);
             this.DataCargo.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(371, 37);
+            this.label1.Location = new System.Drawing.Point(370, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(288, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cargos Registrados";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // tabPage2
             // 
@@ -533,64 +584,133 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tabPage3.Controls.Add(this.btnBuscar);
+            this.tabPage3.Controls.Add(this.txtId);
+            this.tabPage3.Controls.Add(this.btnEliminar);
+            this.tabPage3.Controls.Add(this.btnActualizar);
+            this.tabPage3.Controls.Add(this.txtPagoNo);
+            this.tabPage3.Controls.Add(this.txtPagoDi);
+            this.tabPage3.Controls.Add(this.txtSalarioCargo);
+            this.tabPage3.Controls.Add(this.txtTipoPago);
+            this.tabPage3.Controls.Add(this.txtnombreCargo);
             this.tabPage3.Controls.Add(this.label3);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(1039, 576);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Eliminar Cargo";
+            this.tabPage3.Text = "Actualizar / Eliminar Cargo";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(508, 73);
+            this.label3.Location = new System.Drawing.Point(481, 15);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(220, 36);
+            this.label3.Size = new System.Drawing.Size(389, 36);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Eliminar Cargo";
+            this.label3.Text = "Actualizar / Eliminar Cargo";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // label4
+            // btnActualizar
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(128, 99);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(124, 28);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "ID Cargo:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.btnActualizar.BackColor = System.Drawing.Color.DarkGray;
+            this.btnActualizar.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnActualizar.Location = new System.Drawing.Point(417, 486);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(185, 40);
+            this.btnActualizar.TabIndex = 12;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
-            // txtIdCargo
+            // txtPagoNo
             // 
-            this.txtIdCargo.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdCargo.Location = new System.Drawing.Point(269, 96);
-            this.txtIdCargo.Name = "txtIdCargo";
-            this.txtIdCargo.Size = new System.Drawing.Size(413, 31);
-            this.txtIdCargo.TabIndex = 3;
+            this.txtPagoNo.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPagoNo.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtPagoNo.Location = new System.Drawing.Point(532, 416);
+            this.txtPagoNo.Name = "txtPagoNo";
+            this.txtPagoNo.Size = new System.Drawing.Size(241, 37);
+            this.txtPagoNo.TabIndex = 11;
+            this.txtPagoNo.Text = "Pago nocturno";
             // 
-            // btnConsultarCargo
+            // txtPagoDi
             // 
-            this.btnConsultarCargo.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultarCargo.Location = new System.Drawing.Point(700, 94);
-            this.btnConsultarCargo.Name = "btnConsultarCargo";
-            this.btnConsultarCargo.Size = new System.Drawing.Size(139, 33);
-            this.btnConsultarCargo.TabIndex = 4;
-            this.btnConsultarCargo.Text = "Consultar";
-            this.btnConsultarCargo.UseVisualStyleBackColor = true;
-            this.btnConsultarCargo.Click += new System.EventHandler(this.button3_Click_1);
+            this.txtPagoDi.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPagoDi.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtPagoDi.Location = new System.Drawing.Point(532, 353);
+            this.txtPagoDi.Name = "txtPagoDi";
+            this.txtPagoDi.Size = new System.Drawing.Size(241, 37);
+            this.txtPagoDi.TabIndex = 10;
+            this.txtPagoDi.Text = "Pago diurno";
             // 
-            // btnVerCargos
+            // txtSalarioCargo
             // 
-            this.btnVerCargos.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerCargos.Location = new System.Drawing.Point(846, 94);
-            this.btnVerCargos.Name = "btnVerCargos";
-            this.btnVerCargos.Size = new System.Drawing.Size(117, 33);
-            this.btnVerCargos.TabIndex = 5;
-            this.btnVerCargos.Text = "Ver Todos";
-            this.btnVerCargos.UseVisualStyleBackColor = true;
-            this.btnVerCargos.Click += new System.EventHandler(this.btnVerCargos_Click);
+            this.txtSalarioCargo.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSalarioCargo.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtSalarioCargo.Location = new System.Drawing.Point(532, 290);
+            this.txtSalarioCargo.Name = "txtSalarioCargo";
+            this.txtSalarioCargo.Size = new System.Drawing.Size(241, 37);
+            this.txtSalarioCargo.TabIndex = 9;
+            this.txtSalarioCargo.Text = "Salario de cargo";
+            this.txtSalarioCargo.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
+            // txtTipoPago
+            // 
+            this.txtTipoPago.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTipoPago.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtTipoPago.Location = new System.Drawing.Point(532, 236);
+            this.txtTipoPago.Name = "txtTipoPago";
+            this.txtTipoPago.Size = new System.Drawing.Size(241, 37);
+            this.txtTipoPago.TabIndex = 8;
+            this.txtTipoPago.Text = "Tipo Pago";
+            // 
+            // txtnombreCargo
+            // 
+            this.txtnombreCargo.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnombreCargo.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtnombreCargo.Location = new System.Drawing.Point(532, 175);
+            this.txtnombreCargo.Name = "txtnombreCargo";
+            this.txtnombreCargo.Size = new System.Drawing.Size(241, 37);
+            this.txtnombreCargo.TabIndex = 7;
+            this.txtnombreCargo.Text = "Nombrecargo";
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BackColor = System.Drawing.Color.DarkGray;
+            this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnEliminar.Location = new System.Drawing.Point(703, 486);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(185, 40);
+            this.btnEliminar.TabIndex = 13;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // txtId
+            // 
+            this.txtId.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtId.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtId.Location = new System.Drawing.Point(417, 99);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(271, 37);
+            this.txtId.TabIndex = 14;
+            this.txtId.Text = "Id Cargo";
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.DarkGray;
+            this.btnBuscar.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnBuscar.Location = new System.Drawing.Point(716, 96);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(185, 40);
+            this.btnBuscar.TabIndex = 15;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // Cargo
             // 
@@ -669,6 +789,15 @@
         private System.Windows.Forms.TextBox txtIdCargo;
         private System.Windows.Forms.Button btnConsultarCargo;
         private System.Windows.Forms.Button btnVerCargos;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.TextBox txtPagoNo;
+        private System.Windows.Forms.TextBox txtPagoDi;
+        private System.Windows.Forms.TextBox txtSalarioCargo;
+        private System.Windows.Forms.TextBox txtTipoPago;
+        private System.Windows.Forms.TextBox txtnombreCargo;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }
 

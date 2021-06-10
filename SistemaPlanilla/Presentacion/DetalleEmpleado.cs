@@ -182,11 +182,11 @@ namespace Presentacion
                 if (respuestaSQL == true)
                 {
                     MessageBox.Show("Los datos del nuevo Detalle de empleado fueron insertados correctamente");
-                    txtCarnet.Text = "Nombre cargo";
-                    txtBono.Text = "Tipo Pago";
-                    txtPermiso.Text = "Salario de cargo";
-                    txtHoras.Text = "Pago diurno";
-                    txtDias.Text = "Pago nocturno";
+                    txtCarnet.Text = "Numero Carnet";
+                    txtBono.Text = "Bono Empleado";
+                    txtPermiso.Text = "Permiso con goce de sueldo";
+                    txtHoras.Text = "Horas extras";
+                    txtDias.Text = "Dias extras";
 
                 }
                 else
@@ -201,6 +201,162 @@ namespace Presentacion
             }
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ControlDetalleEmpleado objDetalle = new ControlDetalleEmpleado();
+            try
+            {
+                objDetalle.id_detalle = int.Parse(txtDetalle.Text);
+                objDetalle.Carnet = int.Parse(txtnumCarnet.Text);
+                objDetalle.Bono = float.Parse(txtBonoo.Text);
+                objDetalle.Permiso = float.Parse(txtPermisoS.Text);
+                objDetalle.Horas_extras = int.Parse(txtHorasE.Text);
+                objDetalle.Dias_extras = int.Parse(txtDiasE.Text);
 
+
+                bool respuestaSQL = objDetalle.ActualizarDetalle();
+                if (respuestaSQL == true)
+                {
+                    MessageBox.Show("Los datos del nuevo registro fueron Actualizados correctamente");
+                    txtDetalle.Text = "id Detalle";
+                    txtnumCarnet.Text = "Numero Carnet";
+                    txtBonoo.Text = "Bono Empleado";
+                    txtPermisoS.Text = "Permiso con goce de sueldo";
+                    txtHorasE.Text = "Horas extras";
+                    txtDiasE.Text = "Dias extras";
+
+                }
+                else
+                {
+                    MessageBox.Show(objDetalle.Mensaje);
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show("Error!: " + Ex.Message + " " + objDetalle.Mensaje);
+            }
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtConsultar_Click(object sender, EventArgs e)
+        {
+            ControlDetalleEmpleado obj = new ControlDetalleEmpleado();
+            try
+            {
+                if (string.IsNullOrEmpty(txtIdDetalle.Text ?? string.Empty))
+                {
+                    MessageBox.Show("¡Ingrese el ID por favor! :D");
+                    return;
+                }
+
+                int id = int.Parse(txtIdDetalle.Text);
+                DataSet Datos = obj.ConsultarDetalle(id);
+                DataDetalle.DataSource = Datos.Tables["TablaConsultada"].DefaultView;
+
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show("Fatality!: " + Ex.Message + " " + obj.Mensaje);
+            }
+        }
+
+        private void txtVerTodos_Click(object sender, EventArgs e)
+        {
+            ControlDetalleEmpleado obj = new ControlDetalleEmpleado();
+            try
+            {
+                DataSet DatosDetalle = obj.ConsultarTodosDetalle();
+                int numregistros = DatosDetalle.Tables["TablaConsultada"].Rows.Count;
+                if (numregistros == 0)
+                {
+                    MessageBox.Show("No hay datos en la tabla");
+                }
+                else
+                {
+                    DataSet DatosD = obj.ConsultarTodosDetalle();
+                    DataDetalle.DataSource = DatosD.Tables["TablaConsultada"].DefaultView;
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show("Fatality!: " + Ex.Message + " " + obj.Mensaje);
+            }
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            ControlDetalleEmpleado obj = new ControlDetalleEmpleado();
+            try
+            {
+                DataSet DatosDetalle = obj.ConsultarDetalle(int.Parse(txtDetalle.Text));
+                int numregistros = DatosDetalle.Tables["TablaConsultada"].Rows.Count;
+                if (numregistros == 0)
+                {
+                    MessageBox.Show("No existen datos");
+                }
+                else
+                {   
+                    txtDetalle.Text = DatosDetalle.Tables["TablaConsultada"].Rows[0]["ID_DETALLE"].ToString();
+                    txtnumCarnet.Text = DatosDetalle.Tables["TablaConsultada"].Rows[0]["NUM_CARNET"].ToString();
+                    txtBonoo.Text = DatosDetalle.Tables["TablaConsultada"].Rows[0]["BONO_EMPLEADO"].ToString();
+                    txtPermisoS.Text = DatosDetalle.Tables["TablaConsultada"].Rows[0]["PERMISO_CON_SUELDO"].ToString();
+                    txtHorasE.Text = DatosDetalle.Tables["TablaConsultada"].Rows[0]["HORAS_EXTRAS"].ToString();
+                    txtDiasE.Text = DatosDetalle.Tables["TablaConsultada"].Rows[0]["DIAS_EXTRAS"].ToString();
+
+
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show("Fatality!: " + Ex.Message + " " + obj.Mensaje);
+            }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            ControlDetalleEmpleado obj = new ControlDetalleEmpleado();
+            try
+            {
+                if (string.IsNullOrEmpty(txtDetalle.Text ?? string.Empty))
+                {
+                    MessageBox.Show("Por favor ingrese un ID");
+                }
+                else
+                {
+                    int idCargo = int.Parse(txtDetalle.Text);
+                    bool respuestaSQL = obj.EliminarDetalle(idCargo);
+                    if (respuestaSQL == true)
+                    {
+                        MessageBox.Show("Los datos fueron eliminados correctamente");
+                        txtDetalle.Text = "id Detalle";
+                        txtCarnet.Text = "Numero Carnet";
+                        txtBono.Text = "Bono Empleado";
+                        txtPermiso.Text = "Permiso con goce de sueldo";
+                        txtHoras.Text = "Horas extras";
+                        txtDias.Text = "Dias extras";
+                    }
+                    else
+                    {
+                        MessageBox.Show(obj.Mensaje);
+                    }
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show("Error!: " + Ex.Message + " " + obj.Mensaje);
+            }
+        }
+
+        private void cerrarSesion_Click_1(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Estas seguro?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
     }
 }

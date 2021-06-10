@@ -78,7 +78,7 @@ namespace Logica
             bool respuestaSQL = EjecutarSQL(cadenaSQLActualizar);
             return respuestaSQL;
         }
-        public bool EliminarCargo(string id)
+        public bool EliminarCargo(int id)
         {
             string cadenaSQLEliminar = "DELETE FROM TBL_CARGO WHERE ID_CARGO = " + id + "";
             bool respuestaSQL = EjecutarSQL(cadenaSQLEliminar);

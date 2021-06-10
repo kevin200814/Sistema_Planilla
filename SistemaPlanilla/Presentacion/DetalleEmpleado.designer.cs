@@ -52,17 +52,30 @@
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtCarnet = new System.Windows.Forms.TextBox();
-            this.txtBono = new System.Windows.Forms.TextBox();
-            this.txtPermiso = new System.Windows.Forms.TextBox();
-            this.txtHoras = new System.Windows.Forms.TextBox();
-            this.txtDias = new System.Windows.Forms.TextBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
+            this.txtDias = new System.Windows.Forms.TextBox();
+            this.txtHoras = new System.Windows.Forms.TextBox();
+            this.txtPermiso = new System.Windows.Forms.TextBox();
+            this.txtBono = new System.Windows.Forms.TextBox();
+            this.txtCarnet = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.txtDiasE = new System.Windows.Forms.TextBox();
+            this.txtHorasE = new System.Windows.Forms.TextBox();
+            this.txtPermisoS = new System.Windows.Forms.TextBox();
+            this.txtBonoo = new System.Windows.Forms.TextBox();
+            this.txtnumCarnet = new System.Windows.Forms.TextBox();
+            this.txtDetalle = new System.Windows.Forms.TextBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.txtConsultar = new System.Windows.Forms.Button();
+            this.txtIdDetalle = new System.Windows.Forms.TextBox();
+            this.txtVerTodos = new System.Windows.Forms.Button();
+            this.DataDetalle = new System.Windows.Forms.DataGridView();
             this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnlogoInicio)).BeginInit();
@@ -77,6 +90,7 @@
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataDetalle)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuVertical
@@ -282,6 +296,7 @@
             this.cerrarSesion.TabIndex = 55;
             this.cerrarSesion.Text = "Cerrar Sesion";
             this.cerrarSesion.UseVisualStyleBackColor = true;
+            this.cerrarSesion.Click += new System.EventHandler(this.cerrarSesion_Click_1);
             // 
             // btnlogoInicio
             // 
@@ -398,6 +413,10 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tabPage1.Controls.Add(this.DataDetalle);
+            this.tabPage1.Controls.Add(this.txtVerTodos);
+            this.tabPage1.Controls.Add(this.txtConsultar);
+            this.tabPage1.Controls.Add(this.txtIdDetalle);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
@@ -405,6 +424,16 @@
             this.tabPage1.Size = new System.Drawing.Size(1042, 579);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Registro de detalles de empleados";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(403, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(492, 36);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Registro de Detalle de Empleados";
             // 
             // tabPage2
             // 
@@ -423,87 +452,17 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Registrar Detalle";
             // 
-            // tabPage3
+            // button2
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tabPage3.Controls.Add(this.label3);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1042, 579);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Eliminar Detalle";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(427, 68);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(492, 36);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Registro de Detalle de Empleados";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(514, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(244, 36);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Registrar Detalle";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(524, 66);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(231, 36);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Eliminar Detalle";
-            // 
-            // txtCarnet
-            // 
-            this.txtCarnet.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCarnet.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtCarnet.Location = new System.Drawing.Point(470, 95);
-            this.txtCarnet.Name = "txtCarnet";
-            this.txtCarnet.Size = new System.Drawing.Size(330, 33);
-            this.txtCarnet.TabIndex = 1;
-            this.txtCarnet.Text = "Numero carnet";
-            this.txtCarnet.TextChanged += new System.EventHandler(this.txtCarnet_TextChanged);
-            // 
-            // txtBono
-            // 
-            this.txtBono.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBono.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtBono.Location = new System.Drawing.Point(470, 160);
-            this.txtBono.Name = "txtBono";
-            this.txtBono.Size = new System.Drawing.Size(330, 33);
-            this.txtBono.TabIndex = 2;
-            this.txtBono.Text = "Bono de empleado";
-            // 
-            // txtPermiso
-            // 
-            this.txtPermiso.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPermiso.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtPermiso.Location = new System.Drawing.Point(470, 229);
-            this.txtPermiso.Name = "txtPermiso";
-            this.txtPermiso.Size = new System.Drawing.Size(330, 33);
-            this.txtPermiso.TabIndex = 3;
-            this.txtPermiso.Text = "Permiso con goce de sueldo";
-            // 
-            // txtHoras
-            // 
-            this.txtHoras.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHoras.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtHoras.Location = new System.Drawing.Point(470, 301);
-            this.txtHoras.Name = "txtHoras";
-            this.txtHoras.Size = new System.Drawing.Size(330, 33);
-            this.txtHoras.TabIndex = 4;
-            this.txtHoras.Text = "Horas extras";
+            this.button2.BackColor = System.Drawing.Color.DarkGray;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(536, 463);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(202, 40);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "Guardar";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // txtDias
             // 
@@ -516,17 +475,225 @@
             this.txtDias.Text = "Dias extras";
             this.txtDias.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
-            // button2
+            // txtHoras
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkGray;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(536, 463);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(202, 40);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Guardar";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.txtHoras.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHoras.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtHoras.Location = new System.Drawing.Point(470, 301);
+            this.txtHoras.Name = "txtHoras";
+            this.txtHoras.Size = new System.Drawing.Size(330, 33);
+            this.txtHoras.TabIndex = 4;
+            this.txtHoras.Text = "Horas extras";
+            // 
+            // txtPermiso
+            // 
+            this.txtPermiso.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPermiso.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtPermiso.Location = new System.Drawing.Point(470, 229);
+            this.txtPermiso.Name = "txtPermiso";
+            this.txtPermiso.Size = new System.Drawing.Size(330, 33);
+            this.txtPermiso.TabIndex = 3;
+            this.txtPermiso.Text = "Permiso con goce de sueldo";
+            // 
+            // txtBono
+            // 
+            this.txtBono.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBono.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtBono.Location = new System.Drawing.Point(470, 160);
+            this.txtBono.Name = "txtBono";
+            this.txtBono.Size = new System.Drawing.Size(330, 33);
+            this.txtBono.TabIndex = 2;
+            this.txtBono.Text = "Bono de empleado";
+            // 
+            // txtCarnet
+            // 
+            this.txtCarnet.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCarnet.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtCarnet.Location = new System.Drawing.Point(470, 95);
+            this.txtCarnet.Name = "txtCarnet";
+            this.txtCarnet.Size = new System.Drawing.Size(330, 33);
+            this.txtCarnet.TabIndex = 1;
+            this.txtCarnet.Text = "Numero carnet";
+            this.txtCarnet.TextChanged += new System.EventHandler(this.txtCarnet_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(514, 26);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(244, 36);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Registrar Detalle";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tabPage3.Controls.Add(this.btnEliminar);
+            this.tabPage3.Controls.Add(this.btnBuscar);
+            this.tabPage3.Controls.Add(this.txtDetalle);
+            this.tabPage3.Controls.Add(this.btnActualizar);
+            this.tabPage3.Controls.Add(this.txtDiasE);
+            this.tabPage3.Controls.Add(this.txtHorasE);
+            this.tabPage3.Controls.Add(this.txtPermisoS);
+            this.tabPage3.Controls.Add(this.txtBonoo);
+            this.tabPage3.Controls.Add(this.txtnumCarnet);
+            this.tabPage3.Controls.Add(this.label3);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1042, 579);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Actualizar / Eliminar Detalle";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(538, 26);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(231, 36);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Eliminar Detalle";
+            // 
+            // btnActualizar
+            // 
+            this.btnActualizar.BackColor = System.Drawing.Color.DarkGray;
+            this.btnActualizar.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizar.Location = new System.Drawing.Point(424, 515);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(202, 40);
+            this.btnActualizar.TabIndex = 12;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizar.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // txtDiasE
+            // 
+            this.txtDiasE.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDiasE.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtDiasE.Location = new System.Drawing.Point(476, 452);
+            this.txtDiasE.Name = "txtDiasE";
+            this.txtDiasE.Size = new System.Drawing.Size(330, 33);
+            this.txtDiasE.TabIndex = 11;
+            this.txtDiasE.Text = "Dias extras";
+            // 
+            // txtHorasE
+            // 
+            this.txtHorasE.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHorasE.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtHorasE.Location = new System.Drawing.Point(476, 380);
+            this.txtHorasE.Name = "txtHorasE";
+            this.txtHorasE.Size = new System.Drawing.Size(330, 33);
+            this.txtHorasE.TabIndex = 10;
+            this.txtHorasE.Text = "Horas extras";
+            // 
+            // txtPermisoS
+            // 
+            this.txtPermisoS.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPermisoS.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtPermisoS.Location = new System.Drawing.Point(476, 308);
+            this.txtPermisoS.Name = "txtPermisoS";
+            this.txtPermisoS.Size = new System.Drawing.Size(330, 33);
+            this.txtPermisoS.TabIndex = 9;
+            this.txtPermisoS.Text = "Permiso con goce de sueldo";
+            this.txtPermisoS.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
+            // txtBonoo
+            // 
+            this.txtBonoo.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBonoo.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtBonoo.Location = new System.Drawing.Point(476, 239);
+            this.txtBonoo.Name = "txtBonoo";
+            this.txtBonoo.Size = new System.Drawing.Size(330, 33);
+            this.txtBonoo.TabIndex = 8;
+            this.txtBonoo.Text = "Bono de empleado";
+            // 
+            // txtnumCarnet
+            // 
+            this.txtnumCarnet.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnumCarnet.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtnumCarnet.Location = new System.Drawing.Point(476, 174);
+            this.txtnumCarnet.Name = "txtnumCarnet";
+            this.txtnumCarnet.Size = new System.Drawing.Size(330, 33);
+            this.txtnumCarnet.TabIndex = 7;
+            this.txtnumCarnet.Text = "Numero carnet";
+            // 
+            // txtDetalle
+            // 
+            this.txtDetalle.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDetalle.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtDetalle.Location = new System.Drawing.Point(324, 119);
+            this.txtDetalle.Name = "txtDetalle";
+            this.txtDetalle.Size = new System.Drawing.Size(330, 33);
+            this.txtDetalle.TabIndex = 13;
+            this.txtDetalle.Text = "id Detalle";
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.DarkGray;
+            this.btnBuscar.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Location = new System.Drawing.Point(697, 112);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(202, 40);
+            this.btnBuscar.TabIndex = 14;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BackColor = System.Drawing.Color.DarkGray;
+            this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Location = new System.Drawing.Point(713, 515);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(202, 40);
+            this.btnEliminar.TabIndex = 15;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // txtConsultar
+            // 
+            this.txtConsultar.BackColor = System.Drawing.Color.DarkGray;
+            this.txtConsultar.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConsultar.Location = new System.Drawing.Point(643, 144);
+            this.txtConsultar.Name = "txtConsultar";
+            this.txtConsultar.Size = new System.Drawing.Size(134, 40);
+            this.txtConsultar.TabIndex = 16;
+            this.txtConsultar.Text = "Consultar";
+            this.txtConsultar.UseVisualStyleBackColor = false;
+            this.txtConsultar.Click += new System.EventHandler(this.txtConsultar_Click);
+            // 
+            // txtIdDetalle
+            // 
+            this.txtIdDetalle.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdDetalle.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtIdDetalle.Location = new System.Drawing.Point(271, 149);
+            this.txtIdDetalle.Name = "txtIdDetalle";
+            this.txtIdDetalle.Size = new System.Drawing.Size(330, 33);
+            this.txtIdDetalle.TabIndex = 15;
+            this.txtIdDetalle.Text = "idDetalle";
+            // 
+            // txtVerTodos
+            // 
+            this.txtVerTodos.BackColor = System.Drawing.Color.DarkGray;
+            this.txtVerTodos.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVerTodos.Location = new System.Drawing.Point(815, 144);
+            this.txtVerTodos.Name = "txtVerTodos";
+            this.txtVerTodos.Size = new System.Drawing.Size(124, 40);
+            this.txtVerTodos.TabIndex = 17;
+            this.txtVerTodos.Text = "Ver Todos";
+            this.txtVerTodos.UseVisualStyleBackColor = false;
+            this.txtVerTodos.Click += new System.EventHandler(this.txtVerTodos_Click);
+            // 
+            // DataDetalle
+            // 
+            this.DataDetalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataDetalle.Location = new System.Drawing.Point(271, 226);
+            this.DataDetalle.Name = "DataDetalle";
+            this.DataDetalle.Size = new System.Drawing.Size(668, 254);
+            this.DataDetalle.TabIndex = 18;
             // 
             // DetalleEmpleado
             // 
@@ -559,6 +726,7 @@
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataDetalle)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -599,6 +767,19 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtDetalle;
+        private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.TextBox txtDiasE;
+        private System.Windows.Forms.TextBox txtHorasE;
+        private System.Windows.Forms.TextBox txtPermisoS;
+        private System.Windows.Forms.TextBox txtBonoo;
+        private System.Windows.Forms.TextBox txtnumCarnet;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.DataGridView DataDetalle;
+        private System.Windows.Forms.Button txtVerTodos;
+        private System.Windows.Forms.Button txtConsultar;
+        private System.Windows.Forms.TextBox txtIdDetalle;
     }
 }
 
