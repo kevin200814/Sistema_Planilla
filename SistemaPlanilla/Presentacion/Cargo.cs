@@ -220,5 +220,56 @@ namespace Presentacion
         {
 
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+
+            ControlCargo obj = new ControlCargo();
+            try
+            {
+                if (string.IsNullOrEmpty(txtIdCargo.Text ?? string.Empty))
+                {
+                    MessageBox.Show("¡Ingrese el ID por favor! :D");
+                    return;
+                }
+
+                int id = int.Parse((txtIdCargo.Text));
+                DataSet Datos = obj.ConsultarCargo(id);
+                DataCargo.DataSource = Datos.Tables["TablaConsultada"].DefaultView;
+
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show("Fatality!: " + Ex.Message + " " + obj.Mensaje);
+            }
+        }
+
+        private void btnVerCargos_Click(object sender, EventArgs e)
+        {
+            ControlCargo obj = new ControlCargo();
+            try
+            {
+                DataSet Dato = obj.ConsultarTodosCargo();
+                int numregistros = Dato.Tables["TablaConsultada"].Rows.Count;
+                if (numregistros == 0)
+                {
+                    MessageBox.Show("No hay datos en la tabla");
+                }
+                else
+                {
+                    DataSet Datos = obj.ConsultarTodosCargo();
+                    DataCargo.DataSource = Datos.Tables["TablaConsultada"].DefaultView;
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show("Fatality!: " + Ex.Message + " " + obj.Mensaje);
+            }
+        }
     }
 }

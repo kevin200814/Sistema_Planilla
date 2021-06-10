@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,13 +9,18 @@ namespace Logica
 {
     public class ControlCargo : Conexion
     {
+        private int IDCARGO;
         private string NOMBRE_CARGO;
         private string TIPO_PAGO;
         private float SALARIO_CARGO;
         private float PAGO_DIURNO;
         private float PAGO_NOCTURNO;
 
-       
+        public int id_cargo
+        {
+            get { return IDCARGO; }
+            set { IDCARGO = value; }
+        }
 
         public string Nombre
         {
@@ -52,5 +58,32 @@ namespace Logica
             bool respuestaSQL = EjecutarSQL(cadenaSQLInsertar);
             return respuestaSQL;
         }
+
+
+        public DataSet ConsultarCargo(int id)
+        {
+            string cadenaSQLConsultar = "SELECT * FROM TBL_CARGO WHERE ID_CARGO = " + id + "";
+            DataSet ConsultaResultante = ConsultarSQL(cadenaSQLConsultar);
+            return ConsultaResultante;
+        }
+        public DataSet ConsultarTodosCargo()
+        {
+            string cadenaSQLConsultar = "SELECT * FROM TBL_CARGO";
+            DataSet ConsultaResultante = ConsultarSQL(cadenaSQLConsultar);
+            return ConsultaResultante;
+        }
+        public bool ActualizarCargo()
+        {
+            string cadenaSQLActualizar = "UPDATE TBL_CARGO SET NOMBRE_CARGO = '" + this.Nombre + "', TIPO_PAGO = '" + this.Tipo_Pago + "',SALARIO_CARGO='" + this.Salario + "',PAGO_DIURNO='" + this.Pagod + "',PAGO_NOCTURNO='" + this.PagoN + "' WHERE (ID_CARGO= " + this.id_cargo + ")";
+            bool respuestaSQL = EjecutarSQL(cadenaSQLActualizar);
+            return respuestaSQL;
+        }
+        public bool EliminarCargo(string id)
+        {
+            string cadenaSQLEliminar = "DELETE FROM TBL_CARGO WHERE ID_CARGO = " + id + "";
+            bool respuestaSQL = EjecutarSQL(cadenaSQLEliminar);
+            return respuestaSQL;
+        }
+
     }
 }

@@ -50,19 +50,24 @@
             this.iconcerrar = new System.Windows.Forms.PictureBox();
             this.btnMenu = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.DataCargo = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button2 = new System.Windows.Forms.Button();
+            this.txtPagoNocturno = new System.Windows.Forms.TextBox();
+            this.txtPagoDiurno = new System.Windows.Forms.TextBox();
+            this.txtSalario = new System.Windows.Forms.TextBox();
+            this.txtPago = new System.Windows.Forms.TextBox();
+            this.txtCargo = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.txtCargo = new System.Windows.Forms.TextBox();
-            this.txtPago = new System.Windows.Forms.TextBox();
-            this.txtSalario = new System.Windows.Forms.TextBox();
-            this.txtPagoDiurno = new System.Windows.Forms.TextBox();
-            this.txtPagoNocturno = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtIdCargo = new System.Windows.Forms.TextBox();
+            this.btnConsultarCargo = new System.Windows.Forms.Button();
+            this.btnVerCargos = new System.Windows.Forms.Button();
             this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnlogoInicio)).BeginInit();
@@ -73,10 +78,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconcerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
             this.panelContenedor.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataCargo)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // MenuVertical
@@ -387,6 +393,143 @@
             this.panelContenedor.Size = new System.Drawing.Size(1050, 605);
             this.panelContenedor.TabIndex = 2;
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Location = new System.Drawing.Point(3, 3);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(1047, 602);
+            this.tabControl1.TabIndex = 0;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tabPage1.Controls.Add(this.btnVerCargos);
+            this.tabPage1.Controls.Add(this.btnConsultarCargo);
+            this.tabPage1.Controls.Add(this.txtIdCargo);
+            this.tabPage1.Controls.Add(this.label4);
+            this.tabPage1.Controls.Add(this.DataCargo);
+            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1039, 576);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Registro de cargo";
+            // 
+            // DataCargo
+            // 
+            this.DataCargo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataCargo.Location = new System.Drawing.Point(119, 143);
+            this.DataCargo.Name = "DataCargo";
+            this.DataCargo.Size = new System.Drawing.Size(861, 313);
+            this.DataCargo.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(371, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(288, 36);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Cargos Registrados";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tabPage2.Controls.Add(this.button2);
+            this.tabPage2.Controls.Add(this.txtPagoNocturno);
+            this.tabPage2.Controls.Add(this.txtPagoDiurno);
+            this.tabPage2.Controls.Add(this.txtSalario);
+            this.tabPage2.Controls.Add(this.txtPago);
+            this.tabPage2.Controls.Add(this.txtCargo);
+            this.tabPage2.Controls.Add(this.label2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1039, 576);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Registrar Cargo";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.DarkGray;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button2.Location = new System.Drawing.Point(521, 494);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(185, 40);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "Guardar";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // txtPagoNocturno
+            // 
+            this.txtPagoNocturno.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPagoNocturno.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtPagoNocturno.Location = new System.Drawing.Point(490, 419);
+            this.txtPagoNocturno.Name = "txtPagoNocturno";
+            this.txtPagoNocturno.Size = new System.Drawing.Size(241, 37);
+            this.txtPagoNocturno.TabIndex = 5;
+            this.txtPagoNocturno.Text = "Pago nocturno";
+            // 
+            // txtPagoDiurno
+            // 
+            this.txtPagoDiurno.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPagoDiurno.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtPagoDiurno.Location = new System.Drawing.Point(490, 354);
+            this.txtPagoDiurno.Name = "txtPagoDiurno";
+            this.txtPagoDiurno.Size = new System.Drawing.Size(241, 37);
+            this.txtPagoDiurno.TabIndex = 4;
+            this.txtPagoDiurno.Text = "Pago diurno";
+            // 
+            // txtSalario
+            // 
+            this.txtSalario.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSalario.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtSalario.Location = new System.Drawing.Point(490, 281);
+            this.txtSalario.Name = "txtSalario";
+            this.txtSalario.Size = new System.Drawing.Size(241, 37);
+            this.txtSalario.TabIndex = 3;
+            this.txtSalario.Text = "Salario de cargo";
+            this.txtSalario.TextChanged += new System.EventHandler(this.txtSalario_TextChanged);
+            // 
+            // txtPago
+            // 
+            this.txtPago.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPago.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtPago.Location = new System.Drawing.Point(490, 221);
+            this.txtPago.Name = "txtPago";
+            this.txtPago.Size = new System.Drawing.Size(241, 37);
+            this.txtPago.TabIndex = 2;
+            this.txtPago.Text = "Tipo Pago";
+            this.txtPago.TextChanged += new System.EventHandler(this.txtPago_TextChanged);
+            // 
+            // txtCargo
+            // 
+            this.txtCargo.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCargo.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtCargo.Location = new System.Drawing.Point(490, 161);
+            this.txtCargo.Name = "txtCargo";
+            this.txtCargo.Size = new System.Drawing.Size(241, 37);
+            this.txtCargo.TabIndex = 1;
+            this.txtCargo.Text = "Nombre cargo";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(498, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(233, 36);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Registrar Cargo";
+            // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -408,129 +551,46 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Eliminar Cargo";
             // 
-            // tabPage2
+            // label4
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tabPage2.Controls.Add(this.button2);
-            this.tabPage2.Controls.Add(this.txtPagoNocturno);
-            this.tabPage2.Controls.Add(this.txtPagoDiurno);
-            this.tabPage2.Controls.Add(this.txtSalario);
-            this.tabPage2.Controls.Add(this.txtPago);
-            this.tabPage2.Controls.Add(this.txtCargo);
-            this.tabPage2.Controls.Add(this.label2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1039, 576);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Registrar Cargo";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(128, 99);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(124, 28);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "ID Cargo:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // label2
+            // txtIdCargo
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(498, 16);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(233, 36);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Registrar Cargo";
+            this.txtIdCargo.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdCargo.Location = new System.Drawing.Point(269, 96);
+            this.txtIdCargo.Name = "txtIdCargo";
+            this.txtIdCargo.Size = new System.Drawing.Size(413, 31);
+            this.txtIdCargo.TabIndex = 3;
             // 
-            // tabPage1
+            // btnConsultarCargo
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1039, 576);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Registro de cargo";
+            this.btnConsultarCargo.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultarCargo.Location = new System.Drawing.Point(700, 94);
+            this.btnConsultarCargo.Name = "btnConsultarCargo";
+            this.btnConsultarCargo.Size = new System.Drawing.Size(139, 33);
+            this.btnConsultarCargo.TabIndex = 4;
+            this.btnConsultarCargo.Text = "Consultar";
+            this.btnConsultarCargo.UseVisualStyleBackColor = true;
+            this.btnConsultarCargo.Click += new System.EventHandler(this.button3_Click_1);
             // 
-            // label1
+            // btnVerCargos
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(460, 73);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(288, 36);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Cargos Registrados";
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Location = new System.Drawing.Point(3, 3);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1047, 602);
-            this.tabControl1.TabIndex = 0;
-            // 
-            // txtCargo
-            // 
-            this.txtCargo.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCargo.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtCargo.Location = new System.Drawing.Point(490, 161);
-            this.txtCargo.Name = "txtCargo";
-            this.txtCargo.Size = new System.Drawing.Size(241, 37);
-            this.txtCargo.TabIndex = 1;
-            this.txtCargo.Text = "Nombre cargo";
-            // 
-            // txtPago
-            // 
-            this.txtPago.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPago.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtPago.Location = new System.Drawing.Point(490, 221);
-            this.txtPago.Name = "txtPago";
-            this.txtPago.Size = new System.Drawing.Size(241, 37);
-            this.txtPago.TabIndex = 2;
-            this.txtPago.Text = "Tipo Pago";
-            this.txtPago.TextChanged += new System.EventHandler(this.txtPago_TextChanged);
-            // 
-            // txtSalario
-            // 
-            this.txtSalario.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSalario.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtSalario.Location = new System.Drawing.Point(490, 281);
-            this.txtSalario.Name = "txtSalario";
-            this.txtSalario.Size = new System.Drawing.Size(241, 37);
-            this.txtSalario.TabIndex = 3;
-            this.txtSalario.Text = "Salario de cargo";
-            this.txtSalario.TextChanged += new System.EventHandler(this.txtSalario_TextChanged);
-            // 
-            // txtPagoDiurno
-            // 
-            this.txtPagoDiurno.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPagoDiurno.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtPagoDiurno.Location = new System.Drawing.Point(490, 354);
-            this.txtPagoDiurno.Name = "txtPagoDiurno";
-            this.txtPagoDiurno.Size = new System.Drawing.Size(241, 37);
-            this.txtPagoDiurno.TabIndex = 4;
-            this.txtPagoDiurno.Text = "Pago diurno";
-            // 
-            // txtPagoNocturno
-            // 
-            this.txtPagoNocturno.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPagoNocturno.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtPagoNocturno.Location = new System.Drawing.Point(490, 419);
-            this.txtPagoNocturno.Name = "txtPagoNocturno";
-            this.txtPagoNocturno.Size = new System.Drawing.Size(241, 37);
-            this.txtPagoNocturno.TabIndex = 5;
-            this.txtPagoNocturno.Text = "Pago nocturno";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.DarkGray;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(521, 494);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(185, 40);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Guardar";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnVerCargos.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerCargos.Location = new System.Drawing.Point(846, 94);
+            this.btnVerCargos.Name = "btnVerCargos";
+            this.btnVerCargos.Size = new System.Drawing.Size(117, 33);
+            this.btnVerCargos.TabIndex = 5;
+            this.btnVerCargos.Text = "Ver Todos";
+            this.btnVerCargos.UseVisualStyleBackColor = true;
+            this.btnVerCargos.Click += new System.EventHandler(this.btnVerCargos_Click);
             // 
             // Cargo
             // 
@@ -556,13 +616,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconcerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
             this.panelContenedor.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DataCargo)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -603,6 +664,11 @@
         private System.Windows.Forms.TextBox txtPagoDiurno;
         private System.Windows.Forms.TextBox txtSalario;
         private System.Windows.Forms.TextBox txtPago;
+        private System.Windows.Forms.DataGridView DataCargo;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtIdCargo;
+        private System.Windows.Forms.Button btnConsultarCargo;
+        private System.Windows.Forms.Button btnVerCargos;
     }
 }
 

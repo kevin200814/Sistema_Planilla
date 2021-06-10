@@ -622,5 +622,10 @@ namespace Presentacion
                 MessageBox.Show("Error!: " + Ex.Message + " " + obj.Mensaje);
             }
         }
+
+        private void txtSeachEmpleado_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
