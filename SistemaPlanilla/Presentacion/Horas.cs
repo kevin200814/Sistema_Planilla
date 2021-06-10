@@ -8,28 +8,27 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
-
+using Dominio;
+using Common.cache;
 
 
 namespace Presentacion
 {
-    public partial class Horas : Form
+    public partial class Principal : Form
     {
-        public Horas()
+        public Principal()
         {
             InitializeComponent();
             CargarDataUsuario();
         }
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            if (MenuVertical.Width == 250 )
+            if (MenuVertical.Width == 250)
             {
                 MenuVertical.Width = 70;
-               
             }
             else
                 MenuVertical.Width = 250;
-               
         }
 
         private void iconcerrar_Click(object sender, EventArgs e)
@@ -64,7 +63,7 @@ namespace Presentacion
         private void BarraTitulo_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
-            SendMessage(this.Handle,0x112,0xf012,0);
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
         private void AbrirFormEnPanel(object Formhijo)
@@ -91,68 +90,29 @@ namespace Presentacion
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            btnlogoInicio_Click(null,e);
+            btnlogoInicio_Click(null, e);
         }
 
         private void cerrarSesion_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Estas seguro?","Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            if (MessageBox.Show("Estas seguro?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 this.Close();
             }
         }
 
-        public void CargarDataUsuario() {
-           
-            
-
-        }
-
-        private void lblCargo_Click(object sender, EventArgs e)
+        public void CargarDataUsuario()
         {
+            lblNombre.Text = LoginUusarioCache.nombre + ", " + LoginUusarioCache.apellido;
+            lblCargo.Text = LoginUusarioCache.cargo;
+            lblcorreo.Text = LoginUusarioCache.email;
 
-        }
 
-        private void btnUsuarios_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            Usuarios frmT = new Usuarios();
-            frmT.Show();
-        }
-
-        private void btnEmpleados_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            Empleados frmT = new Empleados();
-            frmT.Show();
-        }
-
-        private void btnHorarios_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            Horas frmT = new Horario();
-            frmT.Show();
-        }
-
-        private void btnRoles_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            Roles frmT = new Roles();
-            frmT.Show();
-        }
-
-        private void btnCargos_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            Cargo frmT = new Cargo();
-            frmT.Show();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            DetalleEmpleado frmT = new DetalleEmpleado();
-            frmT.Show();
         }
     }
 }
+
+
+
+
+

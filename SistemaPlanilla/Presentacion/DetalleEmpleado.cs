@@ -131,7 +131,7 @@ namespace Presentacion
         private void btnHorarios_Click(object sender, EventArgs e)
         {
             this.Close();
-            Horario frmT = new Horario();
+            Horas frmT = new Horario();
             frmT.Show();
         }
 
