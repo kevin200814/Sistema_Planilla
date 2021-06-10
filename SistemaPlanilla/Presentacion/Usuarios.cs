@@ -81,6 +81,9 @@ namespace Presentacion
 
         private void btnprod_Click(object sender, EventArgs e)
         {
+            this.Close();
+            Usuarios frmT = new Usuarios();
+            frmT.Show();
             //AbrirFormEnPanel(new Productos());
         }
 
@@ -119,6 +122,27 @@ namespace Presentacion
         {
             this.Close();
             Empleados frmT = new Empleados();
+            frmT.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Cargo frmT = new Cargo();
+            frmT.Show();
+        }
+
+        private void btnEmpleados_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Empleados frmT = new Empleados();
+            frmT.Show();
+        }
+
+        private void btnCargos_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Cargo frmT = new Cargo();
             frmT.Show();
         }
     }

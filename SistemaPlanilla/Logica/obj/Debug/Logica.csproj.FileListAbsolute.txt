@@ -2,3 +2,29 @@ C:\Users\Alexis\Desktop\Programación orientada a servicios\c sharp\SistemaPlani
 C:\Users\Alexis\Desktop\Programación orientada a servicios\c sharp\SistemaPlanilla\Logica\bin\Debug\Logica.pdb
 C:\Users\Alexis\Desktop\Programación orientada a servicios\c sharp\SistemaPlanilla\Logica\obj\Debug\Logica.dll
 C:\Users\Alexis\Desktop\Programación orientada a servicios\c sharp\SistemaPlanilla\Logica\obj\Debug\Logica.pdb
+C:\Users\Alexis\Desktop\Programación orientada a servicios\Sistema_Planilla\SistemaPlanilla\Logica\bin\Debug\Logica.dll
+C:\Users\Alexis\Desktop\Programación orientada a servicios\Sistema_Planilla\SistemaPlanilla\Logica\bin\Debug\Logica.pdb
+C:\Users\Alexis\Desktop\Programación orientada a servicios\Sistema_Planilla\SistemaPlanilla\Logica\obj\Debug\Logica.dll
+C:\Users\Alexis\Desktop\Programación orientada a servicios\Sistema_Planilla\SistemaPlanilla\Logica\obj\Debug\Logica.pdb
+E:\Sistema_Planilla\SistemaPlanilla\Logica\bin\Debug\Logica.dll
+E:\Sistema_Planilla\SistemaPlanilla\Logica\bin\Debug\Logica.pdb
+E:\Sistema_Planilla\SistemaPlanilla\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+E:\Sistema_Planilla\SistemaPlanilla\Logica\obj\Debug\Logica.dll
+E:\Sistema_Planilla\SistemaPlanilla\Logica\obj\Debug\Logica.pdb
+E:\Sistema_Planilla\SistemaPlanilla\Logica\bin\Debug\Logica.dll.config
+C:\Users\Alexis\Desktop\Programación orientada a servicios\Sistema_Planilla\SistemaPlanilla\Logica\bin\Debug\Logica.dll.config
+C:\Users\Alexis\Desktop\Programación orientada a servicios\Sistema_Planilla\SistemaPlanilla\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\kevin\Documents\Visual Studio 2015\repos\Sistema_Planilla\SistemaPlanilla\Logica\bin\Debug\Logica.dll.config
+C:\Users\kevin\Documents\Visual Studio 2015\repos\Sistema_Planilla\SistemaPlanilla\Logica\bin\Debug\Logica.dll
+C:\Users\kevin\Documents\Visual Studio 2015\repos\Sistema_Planilla\SistemaPlanilla\Logica\bin\Debug\Logica.pdb
+C:\Users\kevin\Documents\Visual Studio 2015\repos\Sistema_Planilla\SistemaPlanilla\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\Users\kevin\Documents\Visual Studio 2015\repos\Sistema_Planilla\SistemaPlanilla\Logica\obj\Debug\Logica.dll
+C:\Users\kevin\Documents\Visual Studio 2015\repos\Sistema_Planilla\SistemaPlanilla\Logica\obj\Debug\Logica.pdb
+C:\Users\kevin\Documents\Visual Studio 2015\repos\Sistema_Planilla\SistemaPlanilla\Logica\obj\Debug\Logica.csproj.AssemblyReference.cache
+C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Logica\bin\Debug\Logica.dll.config
+C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Logica\bin\Debug\Logica.dll
+C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Logica\bin\Debug\Logica.pdb
+C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Logica\obj\Debug\Logica.csprojAssemblyReference.cache
+C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Logica\obj\Debug\Logica.dll
+C:\Users\rodri\OneDrive\Documentos\Arcrivos Personales\ArchivosUsam\Programacion1\Sistema_Planilla\SistemaPlanilla\Logica\obj\Debug\Logica.pdb

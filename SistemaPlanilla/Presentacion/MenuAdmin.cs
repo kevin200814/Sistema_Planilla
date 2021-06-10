@@ -125,5 +125,64 @@ namespace Presentacion
             Empleados frmT = new Empleados();
             frmT.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnCargos_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Cargo frmT = new Cargo();
+            frmT.Show();
+        }
+
+        private void MenuVertical_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Usuarios frmT = new Usuarios();
+            frmT.Show();
+        }
+
+        private void btnEmpleados_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Empleados frmT = new Empleados();
+            frmT.Show();
+        }
+
+        private void btnHorarios_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Horario frmT = new Horario();
+            frmT.Show();
+        }
+
+        private void btnCargos_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+            Cargo frmT = new Cargo();
+            frmT.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            DetalleEmpleado frmT = new DetalleEmpleado();
+            frmT.Show();
+        }
+
+        private void btnRoles_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Roles frmT = new Roles();
+            frmT.Show();
+        }
     }
 }

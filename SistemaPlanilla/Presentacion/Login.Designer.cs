@@ -52,7 +52,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -95,7 +95,7 @@
             // 
             // btnAcceder
             // 
-            this.btnAcceder.BackColor = System.Drawing.SystemColors.Control;
+            this.btnAcceder.BackColor = System.Drawing.Color.RoyalBlue;
             this.btnAcceder.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
             this.btnAcceder.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnAcceder.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -110,7 +110,7 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.BackColor = System.Drawing.SystemColors.Control;
+            this.btnSalir.BackColor = System.Drawing.Color.Red;
             this.btnSalir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
             this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnSalir.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
