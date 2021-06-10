@@ -11,7 +11,7 @@ namespace Presentacion
     {
         public static SqlConnection conectar()
         {
-            SqlConnection cn = new SqlConnection("SERVER=LAPTOP-PT9RLI7S;DATABASE=BD_PLANILLA;integrated security=true");
+            SqlConnection cn = new SqlConnection("Data Source=.;Initial Catalog=BD_PLANILLA;Integrated Security=True");
             cn.Open();
             return cn;
         }

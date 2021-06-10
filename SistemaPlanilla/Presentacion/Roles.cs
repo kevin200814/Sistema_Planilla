@@ -238,5 +238,13 @@ namespace Presentacion
 
             dataGridView1.DataSource = llenar_grid();
         }
+
+        private void cerrarSesion_Click_1(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Estas seguro?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
     }
 }
